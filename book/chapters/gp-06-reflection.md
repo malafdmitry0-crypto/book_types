@@ -1,0 +1,132 @@
+# 6. Reflection: универсальность с проверкой при исполнении
+
+> Reflection переносит часть работы с типами внутрь библиотеки, но выполняет её над runtime-описаниями значений.
+
+## Меняем границу API
+
+Вместо `[]interface{}` примем весь исходный срез в одном интерфейсном значении. Отдельно примем исходную функцию:
+
+```go
+index, err := FindReflect(users, adult)
+all, err := AllReflect(users, active)
+raw, err := MapReflect(users, name)
+// Каждый err нужно проверить до использования результата.
+```
+
+При упаковке среза целиком мы не создаём срез интерфейсных элементов. Его динамический тип остаётся `[]User`. Но тип `src interface{}` сам по себе не обещает даже того, что пришёл срез: можно передать число. Обещания должна проверить реализация.
+
+## Валидация является частью алгоритма
+
+Наша библиотека допускает только неvariadic-функцию с одним входом и одним выходом. Тип входа должен точно совпадать с типом элемента среза. Для Find и All результат должен быть ровно `bool`.
+
+```go
+func checkTransform(src, fn interface{}) (reflect.Value, reflect.Value, error) {
+	s, f := reflect.ValueOf(src), reflect.ValueOf(fn)
+	if !s.IsValid() || s.Kind() != reflect.Slice {
+		return s, f, fmt.Errorf("source must be a slice")
+	}
+	if !f.IsValid() || f.Kind() != reflect.Func || f.IsNil() {
+		return s, f, fmt.Errorf("callback must be a non-nil function")
+	}
+	t := f.Type()
+	if t.IsVariadic() || t.NumIn() != 1 || t.NumOut() != 1 || t.In(0) != s.Type().Elem() {
+		return s, f, fmt.Errorf("callback must have signature func(%v) R", s.Type().Elem())
+	}
+	return s, f, nil
+}
+```
+
+Этот контракт сознательно уже, чем все возможности `reflect.Value.Call`: мы не используем присваиваемость к интерфейсному параметру и не делаем автоматических конверсий. Например, для `[]User` функция `func(interface{}) string` будет отвергнута. Так проще увидеть и проверить отношение типов.
+
+Typed nil-срез является корректным пустым входом. Нетипизированный `nil`, не-срез, nil-функция, неправильное число аргументов и несовпадение типов возвращают ошибку. Проверка выполняется даже для пустого среза: неверную сигнатуру нельзя маскировать отсутствием элементов. Все проверки находятся в [reflection.go](../../examples/reflection.go).
+
+## Find и All
+
+```go
+func FindReflect(src, pred interface{}) (int, error) {
+	s, f, err := checkPredicate(src, pred)
+	if err != nil {
+		return -1, err
+	}
+	for i := 0; i < s.Len(); i++ {
+		if f.Call([]reflect.Value{s.Index(i)})[0].Bool() {
+			return i, nil
+		}
+	}
+	return -1, nil
+}
+```
+
+```go
+func AllReflect(src, pred interface{}) (bool, error) {
+	s, f, err := checkPredicate(src, pred)
+	if err != nil {
+		return false, err
+	}
+	for i := 0; i < s.Len(); i++ {
+		if !f.Call([]reflect.Value{s.Index(i)})[0].Bool() {
+			return false, nil
+		}
+	}
+	return true, nil
+}
+```
+
+После проверки каждый элемент передаётся через `reflect.Value`, результат читается как bool. Ранняя остановка сохранена. Но ошибка `func(Order) bool` для `[]User` обнаруживается при вызове, а не при компиляции программы.
+
+## Map может построить настоящий []R
+
+```go
+func MapReflect(src, transform interface{}) (interface{}, error) {
+	s, f, err := checkTransform(src, transform)
+	if err != nil {
+		return nil, err
+	}
+	target := reflect.SliceOf(f.Type().Out(0))
+	if s.IsNil() {
+		return reflect.Zero(target).Interface(), nil
+	}
+	out := reflect.MakeSlice(target, s.Len(), s.Len())
+	for i := 0; i < s.Len(); i++ {
+		out.Index(i).Set(f.Call([]reflect.Value{s.Index(i)})[0])
+	}
+	return out.Interface(), nil
+}
+```
+
+Из типа возвращаемого значения callback библиотека строит тип `[]R`, создаёт срез и заполняет его. Для `func(User) string` динамический тип результата действительно будет `[]string`, а не `[]interface{}`.
+
+```go
+raw, err := MapReflect(users, name)
+if err != nil {
+    // Обработать несовместимый вызов.
+    return
+}
+names, ok := raw.([]string)
+if !ok {
+    // Нарушено ожидание вызывающего кода о типе результата.
+    return
+}
+```
+
+Статический тип `raw` по-прежнему `interface{}`. Связь между callback и результатом существует в реализации, но не выражена сигнатурой Go. На границе вызывающего кода снова нужна проверка.
+
+Если исходный срез nil, возвращается интерфейс, содержащий nil-срез целевого типа. Поэтому `raw == nil` в успешном таком вызове ложно, а `raw.([]string) == nil` истинно. Прежняя справочная глава о typed nil объясняет механизм, а здесь видно его влияние на дизайн API.
+
+## Граница между ошибкой API и panic пользователя
+
+Валидация гарантирует допустимую форму вызова. Она не гарантирует, что `name` не паникует, не делит на ноль и не обращается к закрытому ресурсу. В нашей реализации panic callback распространяется наружу, как в остальных вариантах. Автоматически восстанавливать его и выдавать как «ошибку типа» было бы изменением контракта.
+
+Цена реализации включает проверки метаданных, упаковку аргументов вызова и `reflect.Call` на каждом обработанном элементе. Количественный вывод требует измерения. Нельзя переносить результат такого поэлементного reflection-алгоритма на любой код, который использует reflect один раз при настройке. API и ограничения: [reflect](https://pkg.go.dev/reflect), модель интерфейсного значения: [The Laws of Reflection](https://go.dev/blog/laws-of-reflection).
+
+## Где reflection сохраняет свою роль
+
+Когда типы приходят из данных во время исполнения — например, при обходе полей произвольной структуры и чтении тегов — compile-time-параметр `E` не заменяет исследование структуры. Для однородного Map с известными в исходном коде типами мы платим за динамику, которая не была требованием задачи.
+
+## Проверка понимания
+
+Почему этот вариант не равен `MapAny`, хотя оба возвращают `interface{}`-связанные данные? Сравните представление входа, динамический тип результата, место проверки callback и потребность в поэлементной распаковке.
+
+---
+
+[← interface{}: один контейнер, потерянные статические связи](gp-05-any.md) · [Оглавление](../README.md) · [Генерация кода: специализация до компиляции →](gp-07-generation.md)

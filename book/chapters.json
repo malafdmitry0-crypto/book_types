@@ -1,0 +1,212 @@
+[
+  {
+    "id": "gp-problem",
+    "title": "Библиотека алгоритмов: что именно мы хотим обобщить",
+    "filename": "gp-01-problem.md",
+    "part": "Основной курс",
+    "number": 1
+  },
+  {
+    "id": "gp-concrete",
+    "title": "Конкретные типы и функции высшего порядка",
+    "filename": "gp-02-concrete.md",
+    "part": "Основной курс",
+    "number": 2
+  },
+  {
+    "id": "gp-closures",
+    "title": "Индексы и замыкания: обобщение без типа элемента",
+    "filename": "gp-03-closures.md",
+    "part": "Основной курс",
+    "number": 3
+  },
+  {
+    "id": "gp-interfaces",
+    "title": "Интерфейсы: алгоритм через минимальный набор операций",
+    "filename": "gp-04-interfaces.md",
+    "part": "Основной курс",
+    "number": 4
+  },
+  {
+    "id": "gp-any",
+    "title": "interface{}: один контейнер, потерянные статические связи",
+    "filename": "gp-05-any.md",
+    "part": "Основной курс",
+    "number": 5
+  },
+  {
+    "id": "gp-reflection",
+    "title": "Reflection: универсальность с проверкой при исполнении",
+    "filename": "gp-06-reflection.md",
+    "part": "Основной курс",
+    "number": 6
+  },
+  {
+    "id": "gp-generation",
+    "title": "Генерация кода: специализация до компиляции",
+    "filename": "gp-07-generation.md",
+    "part": "Основной курс",
+    "number": 7
+  },
+  {
+    "id": "gp-generics",
+    "title": "Go 1.18: связи типов становятся частью сигнатуры",
+    "filename": "gp-08-generics.md",
+    "part": "Основной курс",
+    "number": 8
+  },
+  {
+    "id": "gp-constraints",
+    "title": "Ограничения: выражаем ровно те операции, которые нужны",
+    "filename": "gp-09-constraints.md",
+    "part": "Основной курс",
+    "number": 9
+  },
+  {
+    "id": "gp-standard-library",
+    "title": "История стандартной библиотеки через одну задачу",
+    "filename": "gp-10-standard-library.md",
+    "part": "Основной курс",
+    "number": 10
+  },
+  {
+    "id": "gp-iterators",
+    "title": "Итераторы: обобщаем уже не тип элемента, а источник",
+    "filename": "gp-11-iterators.md",
+    "part": "Основной курс",
+    "number": 11
+  },
+  {
+    "id": "gp-synthesis",
+    "title": "Сравнение подходов и проектирование собственной библиотеки",
+    "filename": "gp-12-synthesis.md",
+    "part": "Основной курс",
+    "number": 12
+  },
+  {
+    "id": "mechanisms",
+    "title": "Что именно называют приведением",
+    "filename": "01-mechanisms.md",
+    "part": "Справочник",
+    "number": 1
+  },
+  {
+    "id": "history",
+    "title": "История возможностей",
+    "filename": "02-history.md",
+    "part": "Справочник",
+    "number": 2
+  },
+  {
+    "id": "numeric",
+    "title": "База: `T(x)` и числовые типы",
+    "filename": "03-numeric.md",
+    "part": "Справочник",
+    "number": 3
+  },
+  {
+    "id": "assignment",
+    "title": "Константы и присваивание",
+    "filename": "04-assignment.md",
+    "part": "Справочник",
+    "number": 4
+  },
+  {
+    "id": "strings",
+    "title": "Строки, байты, руны и числа",
+    "filename": "05-strings.md",
+    "part": "Справочник",
+    "number": 5
+  },
+  {
+    "id": "defined-types",
+    "title": "Определённые типы, структуры, функции и контейнеры",
+    "filename": "06-defined-types.md",
+    "part": "Справочник",
+    "number": 6
+  },
+  {
+    "id": "interfaces",
+    "title": "Интерфейсы: исходная модель полиморфизма",
+    "filename": "07-interfaces.md",
+    "part": "Справочник",
+    "number": 7
+  },
+  {
+    "id": "reflection",
+    "title": "Reflection: когда тип приходит во время исполнения",
+    "filename": "08-reflection.md",
+    "part": "Справочник",
+    "number": 8
+  },
+  {
+    "id": "aliases",
+    "title": "Алиасы: Go 1.9",
+    "filename": "09-aliases.md",
+    "part": "Справочник",
+    "number": 9
+  },
+  {
+    "id": "slice-array-pointer",
+    "title": "Срез → указатель на массив: Go 1.17",
+    "filename": "10-slice-array-pointer.md",
+    "part": "Справочник",
+    "number": 10
+  },
+  {
+    "id": "generics",
+    "title": "Дженерики: Go 1.18",
+    "filename": "11-generics.md",
+    "part": "Справочник",
+    "number": 11
+  },
+  {
+    "id": "slice-array",
+    "title": "Срез → значение массива: Go 1.20",
+    "filename": "12-slice-array.md",
+    "part": "Справочник",
+    "number": 12
+  },
+  {
+    "id": "modern-generics",
+    "title": "Развитие дженериков после Go 1.20",
+    "filename": "13-modern-generics.md",
+    "part": "Справочник",
+    "number": 13
+  },
+  {
+    "id": "unsafe",
+    "title": "`unsafe`: интерпретация памяти",
+    "filename": "14-unsafe.md",
+    "part": "Справочник",
+    "number": 14
+  },
+  {
+    "id": "adapters",
+    "title": "Соседние механизмы, которые тоже называют приведением",
+    "filename": "15-adapters.md",
+    "part": "Справочник",
+    "number": 15
+  },
+  {
+    "id": "reference",
+    "title": "Таблица выбора",
+    "filename": "16-reference.md",
+    "part": "Справочник",
+    "number": 16
+  },
+  {
+    "id": "practice",
+    "title": "Практика и маршрут изучения",
+    "filename": "17-practice.md",
+    "part": "Справочник",
+    "number": 17
+  },
+  {
+    "id": "verification",
+    "title": "Версии, источники и проверка",
+    "filename": "18-verification.md",
+    "part": "Справочник",
+    "number": 18
+  }
+]

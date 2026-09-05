@@ -1,0 +1,151 @@
+{
+  "gp-origins": [
+    "lessons/interfaces/example_test.go",
+    "lessons/interfaces/historical_test.go"
+  ],
+  "gp-problem": [
+    "lessons/generic/example_test.go",
+    "types_test.go"
+  ],
+  "gp-concrete": [
+    "lessons/concrete/concrete.go",
+    "lessons/concrete/example_test.go"
+  ],
+  "gp-closures": [
+    "algorithms/closures/find.go",
+    "algorithms/closures/example_test.go",
+    "algorithms/closures/map_test.go"
+  ],
+  "gp-value-interfaces": [
+    "lessons/interfaces/interfaces.go",
+    "lessons/interfaces/example_test.go"
+  ],
+  "gp-interface-limits": [
+    "lessons/interfaces/example_test.go",
+    "lessons/failures/failures_test.go"
+  ],
+  "gp-interfaces": [
+    "algorithms/example_test.go",
+    "lessons/interfaces/historical_test.go"
+  ],
+  "gp-early-search": [
+    "algorithms/algorithms.go",
+    "algorithms/example_test.go",
+    "algorithms/algorithms_test.go"
+  ],
+  "gp-early-map-sum": [
+    "algorithms/example_test.go",
+    "algorithms/algorithms_test.go"
+  ],
+  "gp-early-contracts": [
+    "algorithms/algorithms.go",
+    "algorithms/algorithms_test.go"
+  ],
+  "gp-any": [
+    "examples/algorithms.go",
+    "examples/example_test.go",
+    "examples/algorithms_test.go"
+  ],
+  "gp-reflection": [
+    "examples/reflection.go",
+    "examples/example_test.go"
+  ],
+  "gp-generation": [
+    "examples/generated_algorithms.go",
+    "examples/internal/generate/main.go",
+    "examples/example_test.go"
+  ],
+  "gp-generics": [
+    "lessons/generic/generic.go",
+    "lessons/generic/example_test.go",
+    "examples/example_test.go"
+  ],
+  "gp-constraints": [
+    "lessons/generic/generic.go",
+    "lessons/generic/example_test.go"
+  ],
+  "gp-standard-library": [
+    "examples/example_test.go"
+  ],
+  "gp-iterators": [
+    "examples/iterator.go",
+    "examples/example_test.go",
+    "examples/algorithms_test.go"
+  ],
+  "gp-synthesis": [
+    "examples/algorithms_test.go",
+    "lessons/generic/example_test.go"
+  ],
+  "mechanisms": [
+    "lessons/reference/basics/example_test.go",
+    "lessons/reference/typeinterfaces/example_test.go"
+  ],
+  "history": [
+    "lessons/reference/modern/example_test.go",
+    "lessons/reference/modern/method_go127_test.go"
+  ],
+  "numeric": [
+    "lessons/reference/basics/example_test.go",
+    "lessons/failures/failures_test.go"
+  ],
+  "assignment": [
+    "lessons/reference/basics/example_test.go"
+  ],
+  "strings": [
+    "lessons/reference/basics/example_test.go"
+  ],
+  "defined-types": [
+    "lessons/reference/defined/defined.go",
+    "lessons/reference/defined/example_test.go",
+    "lessons/reference/basics/example_test.go"
+  ],
+  "interfaces": [
+    "lessons/reference/typeinterfaces/typeinterfaces.go",
+    "lessons/reference/typeinterfaces/example_test.go"
+  ],
+  "reflection": [
+    "lessons/reference/reflection/reflection.go",
+    "lessons/reference/reflection/example_test.go"
+  ],
+  "aliases": [
+    "lessons/reference/aliases/aliases.go",
+    "lessons/reference/aliases/example_test.go"
+  ],
+  "slice-array-pointer": [
+    "lessons/reference/basics/example_test.go",
+    "lessons/failures/failures_test.go"
+  ],
+  "generics": [
+    "lessons/reference/conversions/conversions.go",
+    "lessons/reference/conversions/example_test.go",
+    "lessons/failures/failures_test.go"
+  ],
+  "slice-array": [
+    "lessons/reference/basics/example_test.go",
+    "lessons/failures/failures_test.go"
+  ],
+  "modern-generics": [
+    "lessons/reference/modern/alias_go124.go",
+    "lessons/reference/modern/adder_go126.go",
+    "lessons/reference/modern/method_go127.go"
+  ],
+  "unsafe": [
+    "lessons/reference/basics/example_test.go"
+  ],
+  "adapters": [
+    "lessons/reference/bridges/bridges.go",
+    "lessons/reference/bridges/example_test.go"
+  ],
+  "reference": [
+    "lessons/reference/basics/example_test.go",
+    "lessons/reference/conversions/example_test.go"
+  ],
+  "practice": [
+    "lessons/failures/failures_test.go",
+    "lessons/generic/example_test.go"
+  ],
+  "verification": [
+    "lessons/reference/modern/example_test.go",
+    "lessons/reference/modern/method_go127_test.go"
+  ]
+}

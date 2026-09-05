@@ -1,0 +1,106 @@
+[
+  {
+    "file": "add_self.go",
+    "error": "wrong type for method Add"
+  },
+  {
+    "file": "add_any.go",
+    "error": "wrong type for method Add"
+  },
+  {
+    "file": "slice_interface.go",
+    "error": "cannot use"
+  },
+  {
+    "file": "empty_method.go",
+    "error": "v.String undefined"
+  },
+  {
+    "file": "empty_to_method.go",
+    "error": "does not implement"
+  },
+  {
+    "file": "int_to_method.go",
+    "error": "does not implement"
+  },
+  {
+    "file": "hidden_fields.go",
+    "error": "v.Numerator undefined"
+  },
+  {
+    "file": "slice_predicate.go",
+    "error": "does not implement"
+  },
+  {
+    "file": "pointer_method.go",
+    "error": "pointer receiver"
+  },
+  {
+    "file": "numeric_assignment.go",
+    "error": "cannot use"
+  },
+  {
+    "file": "bool_number.go",
+    "error": "cannot convert"
+  },
+  {
+    "file": "number_bool.go",
+    "error": "cannot convert"
+  },
+  {
+    "file": "complex_float.go",
+    "error": "cannot convert"
+  },
+  {
+    "file": "constant_overflow.go",
+    "error": "overflows"
+  },
+  {
+    "file": "typed_constant.go",
+    "error": "cannot use"
+  },
+  {
+    "file": "nil_integer.go",
+    "error": "cannot convert"
+  },
+  {
+    "file": "new_type_methods.go",
+    "error": "String undefined"
+  },
+  {
+    "file": "slice_conversion.go",
+    "error": "cannot convert"
+  },
+  {
+    "file": "slice_strings.go",
+    "error": "cannot use"
+  },
+  {
+    "file": "map_conversion.go",
+    "error": "cannot convert"
+  },
+  {
+    "file": "channel_direction.go",
+    "error": "cannot convert"
+  },
+  {
+    "file": "universal_cast.go",
+    "error": "cannot convert"
+  },
+  {
+    "file": "generic_assertion.go",
+    "error": "cannot use type assertion"
+  },
+  {
+    "file": "generic_callback.go",
+    "error": "does not match"
+  },
+  {
+    "file": "constraint_value.go",
+    "error": "outside a type constraint"
+  },
+  {
+    "file": "string_number.go",
+    "error": "cannot convert"
+  }
+]

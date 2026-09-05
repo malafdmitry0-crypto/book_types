@@ -1,8 +1,13 @@
 # 7. Интерфейсы: исходная модель полиморфизма
 
+Код главы: [typeinterfaces.go](../../lessons/reference/typeinterfaces/typeinterfaces.go) · [example_test.go](../../lessons/reference/typeinterfaces/example_test.go).
+
+
 > Цель главы: Работать с динамическим типом интерфейсного значения.
 
-### 7.1. Упаковка конкретного значения
+Здесь собраны точные правила, на которых основаны главы об адаптерах. Следите за двумя типами: объявленным типом переменной и конкретным типом значения внутри интерфейса.
+
+## Упаковка конкретного значения
 
 ```go
 var x any = int(42) // any доступен с Go 1.18
@@ -11,7 +16,7 @@ var old interface{} = int(42) // историческая запись того 
 
 Интерфейс хранит динамический тип и значение. Присваивание `int` в `any` не превращает его в «универсальное число». Пара `тип + значение` — семантическая модель, не обещание конкретной раскладки runtime. См. [The Laws of Reflection](https://go.dev/blog/laws-of-reflection).
 
-### 7.2. Type assertion: `x.(T)`
+## Type assertion: `x.(T)`
 
 ```go
 var x any = int(42)
@@ -27,7 +32,7 @@ if n, ok := x.(int); ok {
 
 Для конкретного `T` требуется совпадение динамического типа, а не просто возможность конверсии. Для интерфейсного `T` проверяется реализация интерфейса. Исходный операнд должен иметь интерфейсный тип; к обычной переменной `int` assertion применить нельзя. См. [Effective Go: interface conversions](https://go.dev/doc/effective_go#interface_conversions).
 
-### 7.3. Интерфейс → интерфейс
+## Интерфейс → интерфейс
 
 ```go
 // import "io"
@@ -38,7 +43,7 @@ func inspect(rw io.ReadWriter) {
 }
 ```
 
-### 7.4. Type switch
+## Type switch
 
 ```go
 // import "fmt"
@@ -60,7 +65,7 @@ func describe(x any) string {
 
 Это проверка вариантов во время исполнения. Нетипизированного `x.(type)` вне type switch не существует. См. [Type switches](https://go.dev/ref/spec#Type_switches).
 
-### 7.5. Методы, указатели и typed nil
+## Методы, указатели и typed nil
 
 ```go
 type Worker interface { Work() }

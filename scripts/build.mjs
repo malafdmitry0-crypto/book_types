@@ -10,9 +10,9 @@ function href(url){
  if(chapter)return '#'+chapter.id;
  if(url==='../README.md')return '#contents';
  if(url.startsWith('https://')||url.startsWith('#'))return escape(url);
- if(url.startsWith('../../examples/')) {
+ if(url.startsWith('../../')) {
   const target=path.resolve(root,'book/chapters',url);
-  if(target.startsWith(path.join(root,'examples')+path.sep)&&fs.existsSync(target))return escape(path.relative(root,target));
+  if(target.startsWith(root+path.sep)&&fs.existsSync(target)&&fs.statSync(target).isFile())return escape(path.relative(root,target));
  }
  throw new Error('Unsupported link: '+url);
 }
@@ -36,14 +36,21 @@ function cells(row){
  parts.push(text.trim()); return parts;
 }
 function markdown(source,id){
- const lines=source.split('\n'),out=[];let section=0;
+ const lines=source.split('\n'),out=[];let section=0,goBlock=0;
  for(let i=0;i<lines.length;){
   const line=lines[i];
   if(!line.trim()){i++;continue;}
   if(line.startsWith('```')){
    const language=line.slice(3).trim() || 'text'; const code=[];i++;while(i<lines.length&&!lines[i].startsWith('```'))code.push(lines[i++]);
    if(i===lines.length)throw new Error('Unclosed code block in '+id);i++;
-   out.push(`<div class="code-block"><div class="code-toolbar"><span>${escape(language === "go" ? "Go" : "Схема")}</span><button class="copy" type="button" aria-label="Копировать пример кода">Копировать</button></div><pre><code>${escape(code.join('\n'))}</code></pre></div>`);continue;
+   let sourceLink='';
+   if(language==='go'){
+    goBlock++;
+    const file=`lessons/snippets/testdata/${id}/${String(goBlock).padStart(2,'0')}.go`;
+    if(!fs.existsSync(path.join(root,file)))throw new Error('Run node scripts/sync-snippets.mjs first: '+file);
+    sourceLink=` <a href="${file}" aria-label="Исходник Go-фрагмента ${goBlock}">Исходник ↗</a>`;
+   }
+   out.push(`<div class="code-block"><div class="code-toolbar"><span>${escape(language === "go" ? "Go" : ["sh","bash"].includes(language) ? "Команда" : "Схема")}${sourceLink}</span><button class="copy" type="button" aria-label="Копировать пример кода">Копировать</button></div><pre><code>${escape(code.join('\n'))}</code></pre></div>`);continue;
   }
   if(/^#{1,3} /.test(line)){
    const [,hashes,title]=line.match(/^(#{1,3}) (.*)$/);
@@ -72,11 +79,12 @@ const articles=chapters.map((c,i)=>{
  const prev=i?chapters[i-1]:null,next=chapters[i+1];
  return `<article class="chapter" id="${c.id}" aria-labelledby="${c.id}-title"><header class="chapter-heading"><div class="eyebrow">${escape(c.part)} / ${String(c.number).padStart(2,'0')} <span>· ${minutes} мин чтения</span></div><h1 id="${c.id}-title" tabindex="-1">${inline(c.title)}</h1><a class="source-link" href="book/chapters/${c.filename}">Исходник Markdown ↗</a></header>${body}<nav class="pager" aria-label="Переход между главами">${prev?`<a href="#${prev.id}"><small>← Предыдущая</small>${inline(prev.title)}</a>`:'<a href="#contents"><small>← К началу</small>Оглавление</a>'}${next?`<a href="#${next.id}"><small>Следующая →</small>${inline(next.title)}</a>`:'<a href="#contents"><small>Вы прошли учебник</small>Вернуться к оглавлению →</a>'}</nav></article>`;
 }).join('\n');
-const links=['Основной курс','Справочник'].map(part=>`<details class="nav-group" ${part==='Основной курс'?'open':''}><summary>${part} · ${chapters.filter(c=>c.part===part).length}</summary>${chapters.filter(c=>c.part===part).map(c=>`<a href="#${c.id}" data-chapter="${c.id}"><span>${String(c.number).padStart(2,'0')}</span><span>${inline(c.title)}</span></a>`).join('')}</details>`).join('');
+const parts=[...new Set(chapters.map(c=>c.part))];
+const links=parts.map(part=>`<details class="nav-group" ${part===parts[0]?'open':''}><summary>${part} · ${chapters.filter(c=>c.part===part).length}</summary>${chapters.filter(c=>c.part===part).map(c=>`<a href="#${c.id}" data-chapter="${c.id}"><span>${String(c.number).padStart(2,'0')}</span><span>${inline(c.title)}</span></a>`).join('')}</details>`).join('');
 const data=JSON.stringify(chapters.map(c=>({id:c.id,title:c.title,text:c.text}))).replaceAll('<','\\u003c');
 const html=`<!doctype html>
 <html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Обобщённое программирование в Go на примере Find, All и Map: интерфейсы, reflection, генерация, дженерики и итераторы."><title>Обобщённое программирование в Go — учебник</title><style>${read('web/styles.css')}</style></head>
-<body><a class="skip" href="#main">Перейти к тексту</a><header class="topbar"><a class="brand" href="#contents"><span class="brand-symbol">[E]</span><span>Go / Алгоритмы</span></a><div class="top-actions"><span class="edition">Одна библиотека · Восемь подходов</span><button id="print" type="button">Печать / PDF</button><button id="menu" type="button" aria-expanded="false" aria-controls="sidebar">Главы</button></div></header>
+<body><a class="skip" href="#main">Перейти к тексту</a><header class="topbar"><a class="brand" href="#contents"><span class="brand-symbol">Go</span><span>Go / Алгоритмы</span></a><div class="top-actions"><span class="edition">От Go 1 к параметрам типов</span><button id="print" type="button">Печать / PDF</button><button id="menu" type="button" aria-expanded="false" aria-controls="sidebar">Главы</button></div></header>
 <div class="layout"><aside id="sidebar"><div class="sidebar-top"><span class="eyebrow">Содержание</span><span>${chapters.length} разделов</span></div><label class="search-label" for="search">Поиск по учебнику</label><div class="search-box"><input id="search" type="search" placeholder="Например, интерфейсы" autocomplete="off"><button id="clear-search" type="button" aria-label="Очистить поиск" hidden>×</button></div><p id="search-status" role="status" aria-live="polite" hidden></p><nav id="chapter-nav" aria-label="Главы учебника">${links}</nav><div class="sidebar-note">Один алгоритм.<br>Разные границы абстракции.<a href="book/README.md">Читать в Markdown ↗</a></div></aside>
 <main id="main" tabindex="-1"><section id="contents">${read('web/cover.html')}</section>${articles}<footer>Go / Алгоритмы <span>Обобщённое программирование · Markdown + HTML</span></footer></main></div><div id="notice" role="status" aria-live="polite"></div><script id="book-data" type="application/json">${data}</script><script>${read('web/app.js')}</script></body></html>`;
 fs.writeFileSync(path.join(root,'index.html'),html);

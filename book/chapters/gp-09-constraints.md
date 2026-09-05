@@ -1,6 +1,11 @@
-# 9. Ограничения: выражаем ровно те операции, которые нужны
+# 15. Ограничения: выражаем ровно те операции, которые нужны
+
+Код главы: [generic.go](../../lessons/generic/generic.go) · [example_test.go](../../lessons/generic/example_test.go).
+
 
 > Хороший generic-алгоритм требует минимальных возможностей и сохраняет нужные отношения между типами.
+
+Параметр типа сохраняет выбранный тип, но не разрешает автоматически любые операции. Для каждого алгоритма сформулируем минимальное требование: равенство, порядок, метод или сохранение типа среза.
 
 ## Предикат и встроенное равенство — разные API
 
@@ -82,7 +87,7 @@ type Equaler[E any] interface {
 }
 
 func ContainsEqual[E Equaler[E]](src []E, target E) bool {
-    return Find(src, func(item E) bool { return item.Equal(target) })
+    return Find(src, func(item E) bool { return item.Equal(target) }) >= 0
 }
 ```
 

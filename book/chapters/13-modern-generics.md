@@ -1,8 +1,13 @@
 # 13. Развитие дженериков после Go 1.20
 
+Код главы: [alias_go124.go](../../lessons/reference/modern/alias_go124.go) · [adder_go126.go](../../lessons/reference/modern/adder_go126.go) · [method_go127.go](../../lessons/reference/modern/method_go127.go).
+
+
 > Цель главы: Читать современный generic-код с учётом версии языка.
 
-### 13.1. Вывод типов: Go 1.21
+Не все возможности современного Go доступны одной версии компилятора. У каждого примера ниже есть минимальная версия; новые файлы кода отделены условиями сборки.
+
+## Вывод типов: Go 1.21
 
 ```go
 func Identity[T any](x T) T { return x }
@@ -13,7 +18,7 @@ var intIdentity func(int) int = Identity // Go 1.21+
 
 Вывод аргументов типа не преобразует значения. Он помогает компилятору определить нужную инстанциацию. Источник: [Go 1.21](https://go.dev/doc/go1.21#language).
 
-### 13.2. Generic aliases: Go 1.24
+## Generic aliases: Go 1.24
 
 ```go
 type Set[T comparable] = map[T]bool // Go 1.24+
@@ -27,7 +32,7 @@ func aliasSetExample() {
 
 Запись `type Set[T comparable] map[T]bool` без `=` создаёт определённый generic-тип. Алиас сохраняет идентичность типа справа. Эксперимент появился в Go 1.23, полноценная поддержка — в [Go 1.24](https://go.dev/doc/go1.24#language).
 
-### 13.3. Самоссылки в ограничениях: Go 1.26
+## Самоссылки в ограничениях: Go 1.26
 
 ```go
 type Adder[A Adder[A]] interface { // Go 1.26+
@@ -37,7 +42,7 @@ type Adder[A Adder[A]] interface { // Go 1.26+
 
 Ограничение может ссылаться на объявляемый generic-тип. Это расширяет описание допустимых типов, но не даёт дополнительной runtime-конверсии. Источник: [Go 1.26](https://go.dev/doc/go1.26#language).
 
-### 13.4. Методы с собственными параметрами типов: Go 1.27
+## Методы с собственными параметрами типов: Go 1.27
 
 ```go
 type Converter struct{}

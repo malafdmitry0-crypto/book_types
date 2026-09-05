@@ -1,0 +1,1243 @@
+[
+  {
+    "chapter": "gp-origins",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-origins/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/example_test.go",
+      "lessons/interfaces/historical_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-origins",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-origins/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/example_test.go",
+      "lessons/interfaces/historical_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-problem",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-problem/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/example_test.go",
+      "types_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-problem",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-problem/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/example_test.go",
+      "types_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-concrete",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-concrete/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/concrete/concrete.go",
+      "lessons/concrete/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-concrete",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-concrete/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/concrete/concrete.go",
+      "lessons/concrete/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-concrete",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-concrete/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/concrete/concrete.go",
+      "lessons/concrete/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-closures",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-closures/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/closures/find.go",
+      "algorithms/closures/example_test.go",
+      "algorithms/closures/map_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-closures",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-closures/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/closures/find.go",
+      "algorithms/closures/example_test.go",
+      "algorithms/closures/map_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-closures",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-closures/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/closures/find.go",
+      "algorithms/closures/example_test.go",
+      "algorithms/closures/map_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-closures",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-closures/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/closures/find.go",
+      "algorithms/closures/example_test.go",
+      "algorithms/closures/map_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-closures",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-closures/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/closures/find.go",
+      "algorithms/closures/example_test.go",
+      "algorithms/closures/map_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-value-interfaces",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-value-interfaces/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/interfaces.go",
+      "lessons/interfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-value-interfaces",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-value-interfaces/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/interfaces.go",
+      "lessons/interfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-value-interfaces",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-value-interfaces/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/interfaces.go",
+      "lessons/interfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-value-interfaces",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-value-interfaces/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/interfaces.go",
+      "lessons/interfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-value-interfaces",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-value-interfaces/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/interfaces.go",
+      "lessons/interfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-value-interfaces",
+    "number": 6,
+    "file": "lessons/snippets/testdata/gp-value-interfaces/06.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/interfaces.go",
+      "lessons/interfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-value-interfaces",
+    "number": 7,
+    "file": "lessons/snippets/testdata/gp-value-interfaces/07.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/interfaces.go",
+      "lessons/interfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-value-interfaces",
+    "number": 8,
+    "file": "lessons/snippets/testdata/gp-value-interfaces/08.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/interfaces.go",
+      "lessons/interfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-value-interfaces",
+    "number": 9,
+    "file": "lessons/snippets/testdata/gp-value-interfaces/09.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/interfaces.go",
+      "lessons/interfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-interface-limits",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-interface-limits/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/example_test.go",
+      "lessons/failures/failures_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-interface-limits",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-interface-limits/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/example_test.go",
+      "lessons/failures/failures_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-interface-limits",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-interface-limits/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/example_test.go",
+      "lessons/failures/failures_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-interface-limits",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-interface-limits/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/example_test.go",
+      "lessons/failures/failures_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-interface-limits",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-interface-limits/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/interfaces/example_test.go",
+      "lessons/failures/failures_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-interfaces",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-interfaces/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "lessons/interfaces/historical_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-interfaces",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-interfaces/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "lessons/interfaces/historical_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-interfaces",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-interfaces/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "lessons/interfaces/historical_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-interfaces",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-interfaces/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "lessons/interfaces/historical_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-interfaces",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-interfaces/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "lessons/interfaces/historical_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-interfaces",
+    "number": 6,
+    "file": "lessons/snippets/testdata/gp-interfaces/06.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "lessons/interfaces/historical_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-search",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-early-search/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/algorithms.go",
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-search",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-early-search/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/algorithms.go",
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-search",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-early-search/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/algorithms.go",
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-search",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-early-search/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/algorithms.go",
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-search",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-early-search/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/algorithms.go",
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-search",
+    "number": 6,
+    "file": "lessons/snippets/testdata/gp-early-search/06.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/algorithms.go",
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-search",
+    "number": 7,
+    "file": "lessons/snippets/testdata/gp-early-search/07.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/algorithms.go",
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-search",
+    "number": 8,
+    "file": "lessons/snippets/testdata/gp-early-search/08.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/algorithms.go",
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-search",
+    "number": 9,
+    "file": "lessons/snippets/testdata/gp-early-search/09.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/algorithms.go",
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-map-sum",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-early-map-sum/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-map-sum",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-early-map-sum/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-map-sum",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-early-map-sum/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-map-sum",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-early-map-sum/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-map-sum",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-early-map-sum/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-map-sum",
+    "number": 6,
+    "file": "lessons/snippets/testdata/gp-early-map-sum/06.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-map-sum",
+    "number": 7,
+    "file": "lessons/snippets/testdata/gp-early-map-sum/07.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-map-sum",
+    "number": 8,
+    "file": "lessons/snippets/testdata/gp-early-map-sum/08.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-map-sum",
+    "number": 9,
+    "file": "lessons/snippets/testdata/gp-early-map-sum/09.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/example_test.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-contracts",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-early-contracts/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/algorithms.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-contracts",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-early-contracts/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/algorithms.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-early-contracts",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-early-contracts/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "algorithms/algorithms.go",
+      "algorithms/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-any",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-any/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/algorithms.go",
+      "examples/example_test.go",
+      "examples/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-any",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-any/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/algorithms.go",
+      "examples/example_test.go",
+      "examples/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-any",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-any/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/algorithms.go",
+      "examples/example_test.go",
+      "examples/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-any",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-any/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/algorithms.go",
+      "examples/example_test.go",
+      "examples/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-any",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-any/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/algorithms.go",
+      "examples/example_test.go",
+      "examples/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-reflection",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-reflection/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/reflection.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-reflection",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-reflection/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/reflection.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-reflection",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-reflection/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/reflection.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-reflection",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-reflection/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/reflection.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-reflection",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-reflection/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/reflection.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-reflection",
+    "number": 6,
+    "file": "lessons/snippets/testdata/gp-reflection/06.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/reflection.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generation",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-generation/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/generated_algorithms.go",
+      "examples/internal/generate/main.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generation",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-generation/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/generated_algorithms.go",
+      "examples/internal/generate/main.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generation",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-generation/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/generated_algorithms.go",
+      "examples/internal/generate/main.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generics",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-generics/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/generic.go",
+      "lessons/generic/example_test.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generics",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-generics/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/generic.go",
+      "lessons/generic/example_test.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generics",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-generics/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/generic.go",
+      "lessons/generic/example_test.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generics",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-generics/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/generic.go",
+      "lessons/generic/example_test.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generics",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-generics/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/generic.go",
+      "lessons/generic/example_test.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generics",
+    "number": 6,
+    "file": "lessons/snippets/testdata/gp-generics/06.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/generic.go",
+      "lessons/generic/example_test.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generics",
+    "number": 7,
+    "file": "lessons/snippets/testdata/gp-generics/07.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/generic.go",
+      "lessons/generic/example_test.go",
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-constraints",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-constraints/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/generic.go",
+      "lessons/generic/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-constraints",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-constraints/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/generic.go",
+      "lessons/generic/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-constraints",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-constraints/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/generic.go",
+      "lessons/generic/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-constraints",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-constraints/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/generic.go",
+      "lessons/generic/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-constraints",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-constraints/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/generic.go",
+      "lessons/generic/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-constraints",
+    "number": 6,
+    "file": "lessons/snippets/testdata/gp-constraints/06.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/generic.go",
+      "lessons/generic/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-standard-library",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-standard-library/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-standard-library",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-standard-library/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-iterators",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-iterators/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/iterator.go",
+      "examples/example_test.go",
+      "examples/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-iterators",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-iterators/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/iterator.go",
+      "examples/example_test.go",
+      "examples/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-iterators",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-iterators/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/iterator.go",
+      "examples/example_test.go",
+      "examples/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-iterators",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-iterators/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/iterator.go",
+      "examples/example_test.go",
+      "examples/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-iterators",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-iterators/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/iterator.go",
+      "examples/example_test.go",
+      "examples/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-iterators",
+    "number": 6,
+    "file": "lessons/snippets/testdata/gp-iterators/06.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/iterator.go",
+      "examples/example_test.go",
+      "examples/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-iterators",
+    "number": 7,
+    "file": "lessons/snippets/testdata/gp-iterators/07.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "examples/iterator.go",
+      "examples/example_test.go",
+      "examples/algorithms_test.go"
+    ]
+  },
+  {
+    "chapter": "numeric",
+    "number": 1,
+    "file": "lessons/snippets/testdata/numeric/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/basics/example_test.go",
+      "lessons/failures/failures_test.go"
+    ]
+  },
+  {
+    "chapter": "assignment",
+    "number": 1,
+    "file": "lessons/snippets/testdata/assignment/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/basics/example_test.go"
+    ]
+  },
+  {
+    "chapter": "assignment",
+    "number": 2,
+    "file": "lessons/snippets/testdata/assignment/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/basics/example_test.go"
+    ]
+  },
+  {
+    "chapter": "assignment",
+    "number": 3,
+    "file": "lessons/snippets/testdata/assignment/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/basics/example_test.go"
+    ]
+  },
+  {
+    "chapter": "strings",
+    "number": 1,
+    "file": "lessons/snippets/testdata/strings/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/basics/example_test.go"
+    ]
+  },
+  {
+    "chapter": "strings",
+    "number": 2,
+    "file": "lessons/snippets/testdata/strings/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/basics/example_test.go"
+    ]
+  },
+  {
+    "chapter": "defined-types",
+    "number": 1,
+    "file": "lessons/snippets/testdata/defined-types/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/defined/defined.go",
+      "lessons/reference/defined/example_test.go",
+      "lessons/reference/basics/example_test.go"
+    ]
+  },
+  {
+    "chapter": "defined-types",
+    "number": 2,
+    "file": "lessons/snippets/testdata/defined-types/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/defined/defined.go",
+      "lessons/reference/defined/example_test.go",
+      "lessons/reference/basics/example_test.go"
+    ]
+  },
+  {
+    "chapter": "defined-types",
+    "number": 3,
+    "file": "lessons/snippets/testdata/defined-types/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/defined/defined.go",
+      "lessons/reference/defined/example_test.go",
+      "lessons/reference/basics/example_test.go"
+    ]
+  },
+  {
+    "chapter": "defined-types",
+    "number": 4,
+    "file": "lessons/snippets/testdata/defined-types/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/defined/defined.go",
+      "lessons/reference/defined/example_test.go",
+      "lessons/reference/basics/example_test.go"
+    ]
+  },
+  {
+    "chapter": "defined-types",
+    "number": 5,
+    "file": "lessons/snippets/testdata/defined-types/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/defined/defined.go",
+      "lessons/reference/defined/example_test.go",
+      "lessons/reference/basics/example_test.go"
+    ]
+  },
+  {
+    "chapter": "interfaces",
+    "number": 1,
+    "file": "lessons/snippets/testdata/interfaces/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/typeinterfaces/typeinterfaces.go",
+      "lessons/reference/typeinterfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "interfaces",
+    "number": 2,
+    "file": "lessons/snippets/testdata/interfaces/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/typeinterfaces/typeinterfaces.go",
+      "lessons/reference/typeinterfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "interfaces",
+    "number": 3,
+    "file": "lessons/snippets/testdata/interfaces/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/typeinterfaces/typeinterfaces.go",
+      "lessons/reference/typeinterfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "interfaces",
+    "number": 4,
+    "file": "lessons/snippets/testdata/interfaces/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/typeinterfaces/typeinterfaces.go",
+      "lessons/reference/typeinterfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "interfaces",
+    "number": 5,
+    "file": "lessons/snippets/testdata/interfaces/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/typeinterfaces/typeinterfaces.go",
+      "lessons/reference/typeinterfaces/example_test.go"
+    ]
+  },
+  {
+    "chapter": "reflection",
+    "number": 1,
+    "file": "lessons/snippets/testdata/reflection/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/reflection/reflection.go",
+      "lessons/reference/reflection/example_test.go"
+    ]
+  },
+  {
+    "chapter": "aliases",
+    "number": 1,
+    "file": "lessons/snippets/testdata/aliases/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/aliases/aliases.go",
+      "lessons/reference/aliases/example_test.go"
+    ]
+  },
+  {
+    "chapter": "slice-array-pointer",
+    "number": 1,
+    "file": "lessons/snippets/testdata/slice-array-pointer/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/basics/example_test.go",
+      "lessons/failures/failures_test.go"
+    ]
+  },
+  {
+    "chapter": "generics",
+    "number": 1,
+    "file": "lessons/snippets/testdata/generics/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/conversions/conversions.go",
+      "lessons/reference/conversions/example_test.go",
+      "lessons/failures/failures_test.go"
+    ]
+  },
+  {
+    "chapter": "generics",
+    "number": 2,
+    "file": "lessons/snippets/testdata/generics/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/conversions/conversions.go",
+      "lessons/reference/conversions/example_test.go",
+      "lessons/failures/failures_test.go"
+    ]
+  },
+  {
+    "chapter": "generics",
+    "number": 3,
+    "file": "lessons/snippets/testdata/generics/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/conversions/conversions.go",
+      "lessons/reference/conversions/example_test.go",
+      "lessons/failures/failures_test.go"
+    ]
+  },
+  {
+    "chapter": "generics",
+    "number": 4,
+    "file": "lessons/snippets/testdata/generics/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/conversions/conversions.go",
+      "lessons/reference/conversions/example_test.go",
+      "lessons/failures/failures_test.go"
+    ]
+  },
+  {
+    "chapter": "slice-array",
+    "number": 1,
+    "file": "lessons/snippets/testdata/slice-array/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/basics/example_test.go",
+      "lessons/failures/failures_test.go"
+    ]
+  },
+  {
+    "chapter": "modern-generics",
+    "number": 1,
+    "file": "lessons/snippets/testdata/modern-generics/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/modern/alias_go124.go",
+      "lessons/reference/modern/adder_go126.go",
+      "lessons/reference/modern/method_go127.go"
+    ]
+  },
+  {
+    "chapter": "modern-generics",
+    "number": 2,
+    "file": "lessons/snippets/testdata/modern-generics/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/modern/alias_go124.go",
+      "lessons/reference/modern/adder_go126.go",
+      "lessons/reference/modern/method_go127.go"
+    ]
+  },
+  {
+    "chapter": "modern-generics",
+    "number": 3,
+    "file": "lessons/snippets/testdata/modern-generics/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/modern/alias_go124.go",
+      "lessons/reference/modern/adder_go126.go",
+      "lessons/reference/modern/method_go127.go"
+    ]
+  },
+  {
+    "chapter": "modern-generics",
+    "number": 4,
+    "file": "lessons/snippets/testdata/modern-generics/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/modern/alias_go124.go",
+      "lessons/reference/modern/adder_go126.go",
+      "lessons/reference/modern/method_go127.go"
+    ]
+  },
+  {
+    "chapter": "unsafe",
+    "number": 1,
+    "file": "lessons/snippets/testdata/unsafe/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/basics/example_test.go"
+    ]
+  },
+  {
+    "chapter": "adapters",
+    "number": 1,
+    "file": "lessons/snippets/testdata/adapters/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/bridges/bridges.go",
+      "lessons/reference/bridges/example_test.go"
+    ]
+  },
+  {
+    "chapter": "adapters",
+    "number": 2,
+    "file": "lessons/snippets/testdata/adapters/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/bridges/bridges.go",
+      "lessons/reference/bridges/example_test.go"
+    ]
+  }
+]

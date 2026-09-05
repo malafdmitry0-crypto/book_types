@@ -63,14 +63,10 @@
   document.getElementById('print').addEventListener('click', () => window.print());
   
   const approaches = {
-    concrete: ['names := MapUserNames(users, name) // []string', 'Компилятор проверяет User → string. Для Order или другого результата нужна новая специализация.', 'gp-concrete'],
-    closure: ['names := make([]string, len(users))\nMapInto(len(users), func(i int) {\n    names[i] = name(users[i])\n})', 'Типы сохранены внутри замыкания. Создание результата и согласование размеров лежат на вызывающем. Здесь показан ненулевой вход.', 'gp-closures'],
-    interface: ['names := make([]string, len(users))\nRunMap(UserNameJob{users, names, name})', 'Общий алгоритм знает Len и Apply. Отношение User → string скрыто в конкретном адаптере. Здесь показан ненулевой вход.', 'gp-interfaces'],
-    any: ['raw := MapAny(boxed, func(x interface{}) interface{} {\n    return name(x.(User))\n}) // []interface{}, ещё не []string', 'До вызова нужен []interface{}, после — поэлементное извлечение строк. Callback и содержимое контейнера не связаны статически.', 'gp-any'],
-    reflection: ['raw, err := MapReflect(users, name)\n// После проверки err:\nnames := raw.([]string)', 'Валидация связывает типы во время исполнения. Динамический результат — []string, статический — interface{}.', 'gp-reflection'],
-    generation: ['names := MapUsersGenerated(users, name) // []string', 'Типобезопасная специализация выпущена из шаблона до компиляции. Новая комбинация типов требует генерации.', 'gp-generation'],
-    generic: ['names := Map(users, name) // []string\n// Map[E, R any]([]E, func(E) R) []R', 'Одна сигнатура выражает связь E → R. Компилятор проверяет callback и сохраняет конкретный тип результата.', 'gp-generics'],
-    iterator: ['names := MapSeq(slices.Values(users), name)\n// iter.Seq[string]; работа начнётся при обходе', 'Сохранена связь E → R и скрыт источник элементов. Срез результата пока не создан: вычисление ленивое.', 'gp-iterators']
+    find: ['index, err := algorithms.Find(query)\n// query: fractionQuery\n// Результат — индекс в исходном []fraction.Fraction', 'Алгоритм знает Len и Match. Адаптер хранит дроби и условие; математическое равенство проверяет Fraction.Equal. Тип элемента не проходит через API алгоритма.', 'gp-early-search'],
+    map: ['err := algorithms.Map(job)\n// job: fractionText\n// Source: []fraction.Fraction, Target: []string', 'Алгоритм вызывает Apply по индексам. Адаптер преобразует дробь и записывает строку в заранее выделенный результат. При ошибке уже заполненный префикс сохраняется.', 'gp-early-map-sum'],
+    sum: ['err := algorithms.Sum(&sum)\n// sum: moneySum\n// Начальное Total: money.Money{Currency: "USD"}', 'Алгоритм знает Len и Add. Адаптер хранит типизированный аккумулятор; Money.Add проверяет валюту и переполнение. Начальное значение выбирает вызывающий.', 'gp-early-map-sum'],
+    sort: ['err := algorithms.Sort(boxes(values))\n// values: []boxint.BoxInt\n// Адаптер предоставляет Len, Compare и Swap', 'Алгоритм сравнивает и переставляет элементы по индексам. boxes связывает эти операции с BoxInt. Учебная сортировка вставками стабильна; ошибка может оставить частично изменённый порядок.', 'gp-early-contracts']
   };
   document.getElementById('approach').addEventListener('change', e => {
     const [code,note,id] = approaches[e.target.value];

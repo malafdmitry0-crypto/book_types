@@ -1,87 +1,129 @@
 [
   {
-    "id": "gp-problem",
-    "title": "Библиотека алгоритмов: что именно мы хотим обобщить",
-    "filename": "gp-01-problem.md",
-    "part": "Основной курс",
-    "number": 1
+    "id": "gp-origins",
+    "filename": "gp-00-origins.md",
+    "title": "Как всё начиналось: обобщённое программирование до дженериков",
+    "number": 1,
+    "part": "Как всё начиналось"
   },
   {
-    "id": "gp-concrete",
-    "title": "Конкретные типы и функции высшего порядка",
-    "filename": "gp-02-concrete.md",
-    "part": "Основной курс",
+    "id": "gp-problem",
+    "title": "Наши типы: одинаковые операции ещё не дают общего алгоритма",
+    "filename": "gp-01-problem.md",
+    "part": "Как всё начиналось",
     "number": 2
   },
   {
-    "id": "gp-closures",
-    "title": "Индексы и замыкания: обобщение без типа элемента",
-    "filename": "gp-03-closures.md",
-    "part": "Основной курс",
+    "id": "gp-concrete",
+    "title": "Первая реализация: конкретный тип и повторяющийся цикл",
+    "filename": "gp-02-concrete.md",
+    "part": "Как всё начиналось",
     "number": 3
   },
   {
-    "id": "gp-interfaces",
-    "title": "Интерфейсы: алгоритм через минимальный набор операций",
-    "filename": "gp-04-interfaces.md",
-    "part": "Основной курс",
+    "id": "gp-closures",
+    "title": "Индексы и замыкания: элемент остаётся у вызывающего",
+    "filename": "gp-03-closures.md",
+    "part": "Как всё начиналось",
     "number": 4
+  },
+  {
+    "id": "gp-value-interfaces",
+    "filename": "gp-value-interfaces.md",
+    "title": "Значение через интерфейс: что обещает параметр",
+    "part": "Как всё начиналось",
+    "number": 5
+  },
+  {
+    "id": "gp-interface-limits",
+    "filename": "gp-interface-limits.md",
+    "title": "Ограничения интерфейсов: свой тип, срезы и указатели",
+    "part": "Как всё начиналось",
+    "number": 6
+  },
+  {
+    "id": "gp-interfaces",
+    "title": "Главная идея раннего Go: интерфейс описывает операции коллекции",
+    "filename": "gp-04-interfaces.md",
+    "part": "Как всё начиналось",
+    "number": 7
+  },
+  {
+    "id": "gp-early-search",
+    "filename": "gp-early-search.md",
+    "title": "Find, All и Any: один цикл для разных предметных условий",
+    "number": 8,
+    "part": "Как всё начиналось"
+  },
+  {
+    "id": "gp-early-map-sum",
+    "filename": "gp-early-map-sum.md",
+    "title": "Map и Sum: где в раннем Go хранился типизированный результат",
+    "number": 9,
+    "part": "Как всё начиналось"
+  },
+  {
+    "id": "gp-early-contracts",
+    "filename": "gp-early-contracts.md",
+    "title": "Min, Max, Sort и границы обещаний ранней библиотеки",
+    "number": 10,
+    "part": "Как всё начиналось"
   },
   {
     "id": "gp-any",
     "title": "interface{}: один контейнер, потерянные статические связи",
     "filename": "gp-05-any.md",
-    "part": "Основной курс",
-    "number": 5
+    "part": "Дальнейшее развитие",
+    "number": 11
   },
   {
     "id": "gp-reflection",
     "title": "Reflection: универсальность с проверкой при исполнении",
     "filename": "gp-06-reflection.md",
-    "part": "Основной курс",
-    "number": 6
+    "part": "Дальнейшее развитие",
+    "number": 12
   },
   {
     "id": "gp-generation",
     "title": "Генерация кода: специализация до компиляции",
     "filename": "gp-07-generation.md",
-    "part": "Основной курс",
-    "number": 7
+    "part": "Дальнейшее развитие",
+    "number": 13
   },
   {
     "id": "gp-generics",
     "title": "Go 1.18: связи типов становятся частью сигнатуры",
     "filename": "gp-08-generics.md",
-    "part": "Основной курс",
-    "number": 8
+    "part": "Дальнейшее развитие",
+    "number": 14
   },
   {
     "id": "gp-constraints",
     "title": "Ограничения: выражаем ровно те операции, которые нужны",
     "filename": "gp-09-constraints.md",
-    "part": "Основной курс",
-    "number": 9
+    "part": "Дальнейшее развитие",
+    "number": 15
   },
   {
     "id": "gp-standard-library",
     "title": "История стандартной библиотеки через одну задачу",
     "filename": "gp-10-standard-library.md",
-    "part": "Основной курс",
-    "number": 10
+    "part": "Дальнейшее развитие",
+    "number": 16
   },
   {
     "id": "gp-iterators",
     "title": "Итераторы: обобщаем уже не тип элемента, а источник",
     "filename": "gp-11-iterators.md",
-    "part": "Основной курс",
-    "number": 11
+    "part": "Дальнейшее развитие",
+    "number": 17
   },
   {
     "id": "gp-synthesis",
     "title": "Сравнение подходов и проектирование собственной библиотеки",
     "filename": "gp-12-synthesis.md",
-    "part": "Основной курс",
-    "number": 12
+    "part": "Дальнейшее развитие",
+    "number": 18
   },
   {
     "id": "mechanisms",

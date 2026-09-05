@@ -1,0 +1,10 @@
+// Фрагмент 3: book/chapters/gp-11-iterators.md
+// Контекст и запускаемые сценарии: lessons/README.md и book/code-map.json.
+// Это точная выдержка, не самостоятельная единица компиляции.
+// import "slices"
+names := MapSeq(slices.Values(users), name)
+for value := range names {
+    // Обработать только первое имя.
+    _ = value
+    break
+}

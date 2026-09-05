@@ -147,5 +147,29 @@
   "verification": [
     "lessons/reference/modern/example_test.go",
     "lessons/reference/modern/method_go127_test.go"
+  ],
+  "gp-shared-task": [
+    "lessons/journey/direct_example_test.go",
+    "lessons/journey/example_test.go",
+    "lessons/journey/approaches.go",
+    "lessons/journey/contracts_test.go"
+  ],
+  "gp-operation-laws": [
+    "lessons/laws/example_test.go",
+    "lessons/laws/laws_test.go"
+  ],
+  "gp-filter-reduce": [
+    "lessons/journey/generic.go",
+    "lessons/journey/approaches.go",
+    "lessons/journey/example_test.go"
+  ],
+  "gp-measurements": [
+    "lessons/journey/benchmark_test.go",
+    "lessons/journey/results/bench-go1.25.4.txt"
+  ],
+  "gp-practicum": [
+    "lessons/journey/solutions_test.go",
+    "lessons/journey/fuzz_test.go",
+    "lessons/laws/laws_test.go"
   ]
 }

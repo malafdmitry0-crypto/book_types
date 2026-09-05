@@ -126,6 +126,41 @@
     "number": 18
   },
   {
+    "id": "gp-shared-task",
+    "filename": "gp-shared-task.md",
+    "title": "Одна задача на дробях: восемь реализаций",
+    "number": 19,
+    "part": "Общая задача и практикум"
+  },
+  {
+    "id": "gp-operation-laws",
+    "filename": "gp-operation-laws.md",
+    "title": "Законы операций: что не выражает сигнатура",
+    "number": 20,
+    "part": "Общая задача и практикум"
+  },
+  {
+    "id": "gp-filter-reduce",
+    "filename": "gp-filter-reduce.md",
+    "title": "Filter и Reduce: один договор для разных API",
+    "number": 21,
+    "part": "Общая задача и практикум"
+  },
+  {
+    "id": "gp-measurements",
+    "filename": "gp-measurements.md",
+    "title": "Измерения: стоимость полного вызова и самого обхода",
+    "number": 22,
+    "part": "Общая задача и практикум"
+  },
+  {
+    "id": "gp-practicum",
+    "filename": "gp-practicum.md",
+    "title": "Практикум: задания, решения и fuzz-проверки",
+    "number": 23,
+    "part": "Общая задача и практикум"
+  },
+  {
     "id": "mechanisms",
     "title": "Что именно называют приведением",
     "filename": "01-mechanisms.md",

@@ -924,6 +924,360 @@
     ]
   },
   {
+    "chapter": "gp-shared-task",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-shared-task/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-shared-task/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-shared-task/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-shared-task/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-shared-task/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 6,
+    "file": "lessons/snippets/testdata/gp-shared-task/06.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 7,
+    "file": "lessons/snippets/testdata/gp-shared-task/07.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 8,
+    "file": "lessons/snippets/testdata/gp-shared-task/08.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 9,
+    "file": "lessons/snippets/testdata/gp-shared-task/09.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 10,
+    "file": "lessons/snippets/testdata/gp-shared-task/10.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 11,
+    "file": "lessons/snippets/testdata/gp-shared-task/11.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 12,
+    "file": "lessons/snippets/testdata/gp-shared-task/12.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 13,
+    "file": "lessons/snippets/testdata/gp-shared-task/13.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 14,
+    "file": "lessons/snippets/testdata/gp-shared-task/14.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 15,
+    "file": "lessons/snippets/testdata/gp-shared-task/15.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 16,
+    "file": "lessons/snippets/testdata/gp-shared-task/16.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 17,
+    "file": "lessons/snippets/testdata/gp-shared-task/17.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 18,
+    "file": "lessons/snippets/testdata/gp-shared-task/18.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 19,
+    "file": "lessons/snippets/testdata/gp-shared-task/19.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 20,
+    "file": "lessons/snippets/testdata/gp-shared-task/20.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 21,
+    "file": "lessons/snippets/testdata/gp-shared-task/21.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 22,
+    "file": "lessons/snippets/testdata/gp-shared-task/22.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 23,
+    "file": "lessons/snippets/testdata/gp-shared-task/23.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 24,
+    "file": "lessons/snippets/testdata/gp-shared-task/24.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-shared-task",
+    "number": 25,
+    "file": "lessons/snippets/testdata/gp-shared-task/25.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/direct_example_test.go",
+      "lessons/journey/example_test.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/contracts_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-operation-laws",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-operation-laws/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/laws/example_test.go",
+      "lessons/laws/laws_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-filter-reduce",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-filter-reduce/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/generic.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-filter-reduce",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-filter-reduce/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/generic.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-filter-reduce",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-filter-reduce/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/generic.go",
+      "lessons/journey/approaches.go",
+      "lessons/journey/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-practicum",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-practicum/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/journey/solutions_test.go",
+      "lessons/journey/fuzz_test.go",
+      "lessons/laws/laws_test.go"
+    ]
+  },
+  {
     "chapter": "numeric",
     "number": 1,
     "file": "lessons/snippets/testdata/numeric/01.go",

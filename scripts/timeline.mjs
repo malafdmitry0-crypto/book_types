@@ -1,0 +1,33 @@
+// One source for the responsive HTML timeline and the standalone SVG.
+export const milestones = [
+ ['2009','Публичный Go','language','Общие алгоритмы через поведение', 'Интерфейсы, interface{}, проверки типов и reflection уже в раннем Go. Адаптер связывает конкретные данные с контрактом алгоритма.','https://go.dev/talks/2009/go_talk-20091030.pdf'],
+ ['2012','Go 1','library','Стабильная точка отсчёта', 'sort.Interface: Len, Less, Swap. Алгоритм сортировки работает с индексами, не зная типа элементов. Эти идеи появились до Go 1.','https://go.dev/doc/go1'],
+ ['2014','Go 1.4','tools','Автоматизация генерации', 'go generate запускает генераторы. Можно получать отдельные типизированные реализации из шаблона; сама идея генерации старше этой команды.','https://go.dev/doc/go1.4'],
+ ['2017 · февраль','Go 1.8','library','Меньше адаптерного кода', 'sort.Slice принимает срез и функцию сравнения. В языке конверсии структур теперь допускают различающиеся теги.','https://go.dev/doc/go1.8'],
+ ['2017 · август','Go 1.9','language','Другое имя того же типа', 'type A = B вводит алиас. Он помогает переносить API между пакетами, но не создаёт новый тип и не обобщает алгоритм.','https://go.dev/doc/go1.9'],
+ ['2019','Go 1.13','library','Поиск типа в цепочке ошибок', 'errors.As находит подходящую ошибку через обёртки. Это библиотечный поиск с правилами сопоставления, а не новая конверсия языка.','https://go.dev/doc/go1.13'],
+ ['2020','Go 1.14','language','Композиция интерфейсов', 'Встроенные интерфейсы могут повторять методы с одинаковыми сигнатурами. Несовместимые сигнатуры по-прежнему запрещены.','https://go.dev/doc/go1.14'],
+ ['2021','Go 1.17','language','Новые переходы между представлениями', '[]T → *[N]T; reflect.Value.CanConvert; unsafe.Add и unsafe.Slice. Они расширяют работу с типами, но ещё не дают параметров типов.','https://go.dev/doc/go1.17'],
+ ['2022','Go 1.18','language','Параметры типов', 'Дженерики, type sets, ~, any и comparable. Общая функция сохраняет тип элемента; any — лишь алиас interface{}.','https://go.dev/doc/go1.18'],
+ ['2023 · февраль','Go 1.20','language','Уточнение правил дженериков', 'Обычные интерфейсные типы могут удовлетворять comparable; сравнение всё ещё способно паниковать. Добавлена конверсия []T → [N]T.','https://go.dev/doc/go1.20'],
+ ['2023 · август','Go 1.21','library','Общие алгоритмы в стандартной библиотеке', 'Пакеты slices, maps и cmp; встроенные min, max, clear. Расширен вывод типов. Параметры типов становятся основой готовых API коллекций.','https://go.dev/doc/go1.21'],
+ ['2024 · февраль','Go 1.22','library','Мост от дженериков к reflection', 'reflect.TypeFor[T]() получает reflect.Type по параметру типа, без значения-образца. Механизмы дополняют друг друга.','https://go.dev/doc/go1.22'],
+ ['2024 · август','Go 1.23','language','Общий протокол обхода', 'range по функциям-итераторам, пакет iter, итераторы slices и maps. slices.All выдаёт индексы и значения, а не проверяет предикат «все».','https://go.dev/doc/go1.23'],
+ ['2025 · февраль','Go 1.24','language','Алиасы с параметрами типов', 'Полная поддержка generic aliases, включая использование между пакетами. В Go 1.23 поддержка была экспериментальной и ограниченной.','https://go.dev/doc/go1.24'],
+ ['2025 · август','Go 1.25','language','Проще описание системы типов', 'Из спецификации убрано понятие core types. Это упрощение правил изложения, без изменения поведения программ.','https://go.dev/doc/go1.25'],
+ ['2026 · февраль','Go 1.26','language','Самоссылки в ограничениях', 'Generic-тип может ссылаться на себя в списке параметров типов. Это расширяет способы записи контрактов операций над собственным типом.','https://go.dev/doc/go1.26'],
+ ['2026 · август','Go 1.27','language','Собственные параметры типов у методов', 'Методы могут объявлять параметры типов. Методы интерфейсов — по-прежнему нет; generic-метод не реализует метод интерфейса.','https://go.dev/doc/go1.27'],
+];
+const categories={language:['Язык','#7636a3'],library:['Библиотека','#006775'],tools:['Инструменты','#9a4017']};
+const esc=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+export function timelineHTML(){
+ return `<div class="go-timeline" aria-label="Ключевые вехи Go"><div class="timeline-legend">${Object.entries(categories).map(([key,[label]])=>`<span class="timeline-${key}">${label}</span>`).join('')}</div><ol class="timeline-events">${milestones.map(([date,version,kind,title,body,url])=>`<li class="timeline-${kind}"><div class="timeline-date">${esc(date)}</div><div class="timeline-card"><div class="timeline-meta"><a href="${url}">${esc(version)} ↗</a><span>${categories[kind][0]}</span></div><h3>${esc(title)}</h3><p>${esc(body)}</p></div></li>`).join('')}</ol></div>`;
+}
+function wrap(text,length){
+ const lines=[''];for(const word of text.split(' ')){const last=lines.length-1;if(lines[last]&&lines[last].length+word.length+1>length)lines.push(word);else lines[last]+=(lines[last]?' ':'')+word;}return lines;
+}
+export function timelineSVG(){
+ const height=230+milestones.length*172;
+ const text=(x,y,content,size=18,color='#192c44',weight=400)=>`<text x="${x}" y="${y}" font-size="${size}" fill="${color}" font-weight="${weight}">${esc(content)}</text>`;
+ return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="${height}" viewBox="0 0 1200 ${height}" role="img" aria-labelledby="title desc"><title id="title">Как Go учился обобщать алгоритмы</title><desc id="desc">Ключевые вехи системы типов и стандартной библиотеки: 2009–2026. Расстояния между событиями условные.</desc><rect width="1200" height="${height}" fill="#f7f9fc"/><g font-family="Arial, sans-serif">${text(48,58,'Go / От интерфейсов к параметрам типов',34,'#192c44',700)}${text(48,94,'2009–2026 · Ключевые вехи по теме учебника · Шкала времени неравномерная')}${Object.values(categories).map(([label,color],i)=>`<circle cx="${56+i*230}" cy="130" r="5" fill="${color}"/>${text(70+i*230,136,label,17,color)}`).join('')}<path d="M 234 194 V ${height-96}" stroke="#dbe3ef" stroke-width="3"/>${milestones.map(([date,version,kind,title,body,url],i)=>{const y=170+i*172,color=categories[kind][1];return `<circle cx="234" cy="${y+30}" r="7" fill="${color}"/>${text(48,y+36,date,17)}<a href="${esc(url)}"><rect x="260" y="${y}" width="892" height="156" rx="12" fill="white" stroke="#dbe3ef"/>${text(282,y+29,version+'  /  '+categories[kind][0],18,color,700)}${text(282,y+60,title,23,'#192c44',700)}${wrap(body,88).map((line,j)=>text(282,y+91+j*24,line,18)).join('')}</a>`;}).join('')}${text(48,height-25,'Источники: go.dev · Нажмите на карточку, чтобы открыть официальный документ.',16)}</g></svg>`;
+}

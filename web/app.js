@@ -70,7 +70,7 @@
   };
   document.getElementById('approach').addEventListener('change', e => {
     const [code,note,id] = approaches[e.target.value];
-    document.getElementById('approach-code').textContent = code;
+    document.getElementById('approach-code').innerHTML = BookSyntax.highlight(code, 'go');
     document.getElementById('approach-note').textContent = note;
     document.getElementById('approach-link').href = '#' + id;
   });

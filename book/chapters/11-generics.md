@@ -49,7 +49,7 @@ func IsString[T any](x T) bool {
 }
 ```
 
-`Assert[int64](int(42))` вернёт `0, false`. `Assert` обобщает проверку типа, не числовую конверсию. Прямой `x.(string)` для `x T` запрещён: сначала нужно интерфейсное значение. Так же для type switch используют `switch any(x).(type)`. См. [Type assertions](https://go.dev/ref/spec#Type_assertions).
+`Assert[int64](int(42))` вернёт `0, false`. `Assert` обобщает проверку типа, не числовую конверсию. Прямой `x.(string)` для `x T` запрещён: сначала нужно интерфейсное значение. Также для type switch используют `switch any(x).(type)`. См. [Type assertions](https://go.dev/ref/spec#Type_assertions).
 
 ## Поэлементный маппинг
 

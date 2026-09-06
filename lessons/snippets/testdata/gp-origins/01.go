@@ -5,6 +5,6 @@ type Stringer interface {
     String() string
 }
 
-func Describe(value Stringer) string {
+func DescribeStringer(value Stringer) string {
     return value.String()
 }

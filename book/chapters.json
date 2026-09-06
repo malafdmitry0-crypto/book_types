@@ -105,59 +105,73 @@
     "number": 15
   },
   {
+    "id": "gp-generic-types",
+    "filename": "gp-generic-types.md",
+    "title": "Обобщённые типы данных: Stack[T], Set[K] и методы",
+    "part": "Дальнейшее развитие",
+    "number": 16
+  },
+  {
+    "id": "gp-type-inference",
+    "filename": "gp-type-inference.md",
+    "title": "Вывод типов: когда аргументы типов можно не писать",
+    "part": "Дальнейшее развитие",
+    "number": 17
+  },
+  {
     "id": "gp-standard-library",
     "title": "История стандартной библиотеки через одну задачу",
     "filename": "gp-10-standard-library.md",
     "part": "Дальнейшее развитие",
-    "number": 16
+    "number": 18
   },
   {
     "id": "gp-iterators",
     "title": "Итераторы: обобщаем уже не тип элемента, а источник",
     "filename": "gp-11-iterators.md",
     "part": "Дальнейшее развитие",
-    "number": 17
+    "number": 19
   },
   {
     "id": "gp-synthesis",
     "title": "Сравнение подходов и проектирование собственной библиотеки",
     "filename": "gp-12-synthesis.md",
     "part": "Дальнейшее развитие",
-    "number": 18
+    "number": 20
   },
   {
     "id": "gp-shared-task",
     "filename": "gp-shared-task.md",
     "title": "Одна задача на дробях: восемь реализаций",
-    "number": 19,
+    "number": 21,
     "part": "Общая задача и практикум"
   },
   {
     "id": "gp-operation-laws",
     "filename": "gp-operation-laws.md",
     "title": "Законы операций: что не выражает сигнатура",
-    "number": 20,
+    "number": 22,
     "part": "Общая задача и практикум"
   },
   {
     "id": "gp-filter-reduce",
     "filename": "gp-filter-reduce.md",
     "title": "Filter и Reduce: один договор для разных API",
-    "number": 21,
+    "number": 23,
     "part": "Общая задача и практикум"
   },
   {
     "id": "gp-measurements",
     "filename": "gp-measurements.md",
     "title": "Измерения: стоимость полного вызова и самого обхода",
-    "number": 22,
+    "number": 24,
     "part": "Общая задача и практикум"
   },
   {
     "id": "gp-practicum",
     "filename": "gp-practicum.md",
     "title": "Практикум: задания, решения и fuzz-проверки",
-    "number": 23,
+    "number": 25,
     "part": "Общая задача и практикум"
   },
   {
@@ -285,5 +299,12 @@
     "filename": "18-verification.md",
     "part": "Справочник",
     "number": 18
+  },
+  {
+    "id": "motivations",
+    "filename": "19-motivations.md",
+    "title": "Зачем вводили новшества: проблемы и решения",
+    "part": "Справочник",
+    "number": 19
   }
 ]

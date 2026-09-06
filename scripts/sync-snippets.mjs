@@ -3,6 +3,11 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const chapters=JSON.parse(fs.readFileSync(path.join(root,'book/chapters.json'),'utf8'));
+const registered=new Set(chapters.map(c=>c.filename));
+for(const filename of fs.readdirSync(path.join(root,'book/chapters'))){
+ if(filename.endsWith('.md')&&!registered.has(filename))throw new Error('Chapter missing from chapters.json: '+filename);
+}
+if(registered.size!==chapters.length||new Set(chapters.map(c=>c.id)).size!==chapters.length)throw new Error('Duplicate chapter filename or id');
 const codeMap=JSON.parse(fs.readFileSync(path.join(root,'book/code-map.json'),'utf8'));
 const check=process.argv.includes('--check');
 const expected=new Map();

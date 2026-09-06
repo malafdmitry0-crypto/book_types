@@ -1,9 +1,16 @@
 package basics
 
 import (
+	"crypto/sha256"
+	"encoding/binary"
 	"fmt"
+	"math"
 	"strconv"
+	"strings"
+	"unicode/utf8"
 	"unsafe"
+
+	"gotypes/internal/checkedint"
 )
 
 func Example_numbers() {
@@ -32,6 +39,15 @@ func Example_numbers() {
 	// _ = float64(z)   // сначала явно выбираем real(z) или imag(z)
 	fmt.Println(wide, fraction, whole, small, unsigned, compact, realPart, imagPart, constructed)
 	// Output: 42 42 -3 44 255 (3+4i) 3 4 (42+0i)
+}
+func Example_wraparound() {
+	// import "math"
+	// import "gotypes/internal/checkedint"
+	var top int64 = math.MaxInt64
+	wrapped := top + 1 // переполнение определено языком: ошибки нет
+	checked, err := checkedint.Add(top, 1)
+	fmt.Println(wrapped, checked, err)
+	// Output: -9223372036854775808 0 integer overflow
 }
 func Example_constants() {
 	const answer = 42
@@ -92,6 +108,30 @@ func Example_strings() {
 	fmt.Println(len(bytes), len(runes), fromBytes, fromRunes, letter, replacement, original)
 	// Output: 12 6 Привет Привет A � Привет
 }
+func Example_runes() {
+	// import "unicode/utf8"
+	text := "Go\xffя" // 'G', 'o', недопустимый байт, 'я' (два байта)
+	var parts []string
+	for offset, r := range text { // offset — байтовый индекс, r — руна
+		parts = append(parts, fmt.Sprintf("%d:%U", offset, r))
+	}
+	fmt.Println(strings.Join(parts, " "))
+	fmt.Println(len(text), utf8.RuneCountInString(text), utf8.ValidString(text))
+	// Output:
+	// 0:U+0047 1:U+006F 2:U+FFFD 3:U+044F
+	// 5 4 false
+}
+func Example_builder() {
+	// import "strings"
+	var b strings.Builder
+	for i := 0; i < 3; i++ {
+		b.WriteString("go")
+	}
+	built := b.String()                // без копирования накопленного буфера
+	cloned := strings.Clone(built[:2]) // отдельная аллокация для короткой подстроки
+	fmt.Println(built, cloned)
+	// Output: gogogo go
+}
 func Example_parse() {
 	// import "strconv"
 	n, err := strconv.Atoi("42")
@@ -136,6 +176,19 @@ func Example_arrayPointer() {
 	fmt.Println(s, p)
 	// Output: [99 20 30] &[99 20]
 }
+func Example_arrayPointerAppend() {
+	s := make([]int, 2, 4)
+	p := (*[2]int)(s)
+	s = append(s, 3) // cap достаточно: массив общий
+	s[0] = 7
+	fmt.Println(p[0])
+	s = append(s, 4, 5) // cap не хватает: append выделяет новый массив
+	s[0] = 8
+	fmt.Println(p[0], s[0]) // p по-прежнему смотрит на старый массив
+	// Output:
+	// 7
+	// 7 8
+}
 func Example_arrayCopy() {
 	s := []int{10, 20, 30}
 	a := [2]int(s)
@@ -145,10 +198,50 @@ func Example_arrayCopy() {
 	fmt.Println(s, a)
 	// Output: [10 20 30] [99 20]
 }
+func Example_arrayKey() {
+	// import "crypto/sha256"
+	digest := sha256.New()
+	digest.Write([]byte("go"))
+	sum := digest.Sum(nil) // []byte: срез не сравним и не годится в ключ map
+	key := [32]byte(sum)   // копия фиксированного размера: сравнима
+	seen := map[[32]byte]bool{key: true}
+	fmt.Println(len(sum), seen[sha256.Sum256([]byte("go"))])
+	// Output: 32 true
+}
+func Example_arrayShallow() {
+	one, two := 1, 2
+	s := []*int{&one, &two}
+	a := [2]*int(s)
+	*a[0] = 10 // объект общий: s[0] тоже указывает на 10
+	a[1] = nil // элемент массива свой: s[1] не меняется
+	fmt.Println(*s[0], s[1] != nil)
+	// Output: 10 true
+}
 func Example_unsafe() {
 	// import "unsafe"
 	bits := uint32(0x3f800000)
 	number := *(*float32)(unsafe.Pointer(&bits)) // 1 на соответствующем представлении
 	fmt.Println(number)
 	// Output: 1
+}
+func Example_layout() {
+	// import "unsafe"
+	type header struct {
+		flag byte
+		size uint32
+	}
+	var h header
+	fmt.Println(unsafe.Sizeof(h), unsafe.Alignof(h.size), unsafe.Offsetof(h.size))
+	// Output: 8 4 4
+}
+func Example_stdlibInsteadOfUnsafe() {
+	// import "encoding/binary"
+	// import "math"
+	number := math.Float32frombits(0x3f800000)
+	raw := []byte{0, 0, 0, 1}
+	value := binary.BigEndian.Uint32(raw)
+	buf := []byte("view")
+	view := unsafe.String(unsafe.SliceData(buf), len(buf)) // buf нельзя менять, пока жив view
+	fmt.Println(number, value, view)
+	// Output: 1 1 view
 }

@@ -65,7 +65,8 @@
     "lessons/generic/example_test.go"
   ],
   "gp-standard-library": [
-    "examples/example_test.go"
+    "examples/example_test.go",
+    "examples/stdlib_example_test.go"
   ],
   "gp-iterators": [
     "examples/iterator.go",
@@ -165,11 +166,22 @@
   ],
   "gp-measurements": [
     "lessons/journey/benchmark_test.go",
-    "lessons/journey/results/bench-go1.25.4.txt"
+    "lessons/journey/results/bench-go1.25.4.txt",
+    "lessons/journey/shape_bench_test.go",
+    "lessons/journey/results/bench-shape-go1.25.4.txt"
   ],
   "gp-practicum": [
     "lessons/journey/solutions_test.go",
     "lessons/journey/fuzz_test.go",
     "lessons/laws/laws_test.go"
-  ]
+  ],
+  "gp-generic-types": [
+    "lessons/containers/containers.go",
+    "lessons/containers/example_test.go"
+  ],
+  "gp-type-inference": [
+    "lessons/generic/inference.go",
+    "lessons/generic/inference_example_test.go"
+  ],
+  "motivations": []
 }

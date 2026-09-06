@@ -1,4 +1,4 @@
-# 18. Сравнение подходов и проектирование собственной библиотеки
+# 20. Сравнение подходов и проектирование собственной библиотеки
 
 Код главы: [algorithms_test.go](../../examples/algorithms_test.go) · [example_test.go](../../lessons/generic/example_test.go).
 

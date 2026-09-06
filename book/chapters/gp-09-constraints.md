@@ -105,4 +105,4 @@ func ContainsEqual[E Equaler[E]](src []E, target E) bool {
 
 ---
 
-[← Go 1.18: связи типов становятся частью сигнатуры](gp-08-generics.md) · [Оглавление](../README.md) · [История стандартной библиотеки через одну задачу →](gp-10-standard-library.md)
+[← Go 1.18: связи типов становятся частью сигнатуры](gp-08-generics.md) · [Оглавление](../README.md) · [Обобщённые типы данных: Stack[T], Set[K] и методы →](gp-generic-types.md)

@@ -27,4 +27,4 @@ node scripts/build.mjs
 
 ---
 
-[← Практика и маршрут изучения](17-practice.md) · [Оглавление](../README.md)
+[← Практика и маршрут изучения](17-practice.md) · [Оглавление](../README.md) · [Зачем вводили новшества →](19-motivations.md)

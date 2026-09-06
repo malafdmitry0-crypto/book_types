@@ -102,5 +102,21 @@
   {
     "file": "string_number.go",
     "error": "cannot convert"
+  },
+  {
+    "file": "generic_method.go",
+    "error": "method must have no type parameters"
+  },
+  {
+    "file": "cannot_infer.go",
+    "error": "cannot infer"
+  },
+  {
+    "file": "method_constraint.go",
+    "error": "does not satisfy cmp.Ordered"
+  },
+  {
+    "file": "mixed_constants.go",
+    "error": "mismatched types"
   }
 ]

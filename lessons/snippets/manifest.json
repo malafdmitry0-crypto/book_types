@@ -829,12 +829,273 @@
     ]
   },
   {
+    "chapter": "gp-generic-types",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-generic-types/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-generic-types/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-generic-types/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-generic-types/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-generic-types/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 6,
+    "file": "lessons/snippets/testdata/gp-generic-types/06.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 7,
+    "file": "lessons/snippets/testdata/gp-generic-types/07.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 8,
+    "file": "lessons/snippets/testdata/gp-generic-types/08.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 9,
+    "file": "lessons/snippets/testdata/gp-generic-types/09.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 10,
+    "file": "lessons/snippets/testdata/gp-generic-types/10.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 11,
+    "file": "lessons/snippets/testdata/gp-generic-types/11.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 12,
+    "file": "lessons/snippets/testdata/gp-generic-types/12.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 13,
+    "file": "lessons/snippets/testdata/gp-generic-types/13.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 14,
+    "file": "lessons/snippets/testdata/gp-generic-types/14.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 15,
+    "file": "lessons/snippets/testdata/gp-generic-types/15.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-generic-types",
+    "number": 16,
+    "file": "lessons/snippets/testdata/gp-generic-types/16.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/containers/containers.go",
+      "lessons/containers/example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-type-inference",
+    "number": 1,
+    "file": "lessons/snippets/testdata/gp-type-inference/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/inference.go",
+      "lessons/generic/inference_example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-type-inference",
+    "number": 2,
+    "file": "lessons/snippets/testdata/gp-type-inference/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/inference.go",
+      "lessons/generic/inference_example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-type-inference",
+    "number": 3,
+    "file": "lessons/snippets/testdata/gp-type-inference/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/inference.go",
+      "lessons/generic/inference_example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-type-inference",
+    "number": 4,
+    "file": "lessons/snippets/testdata/gp-type-inference/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/inference.go",
+      "lessons/generic/inference_example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-type-inference",
+    "number": 5,
+    "file": "lessons/snippets/testdata/gp-type-inference/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/inference.go",
+      "lessons/generic/inference_example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-type-inference",
+    "number": 6,
+    "file": "lessons/snippets/testdata/gp-type-inference/06.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/inference.go",
+      "lessons/generic/inference_example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-type-inference",
+    "number": 7,
+    "file": "lessons/snippets/testdata/gp-type-inference/07.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/inference.go",
+      "lessons/generic/inference_example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-type-inference",
+    "number": 8,
+    "file": "lessons/snippets/testdata/gp-type-inference/08.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/inference.go",
+      "lessons/generic/inference_example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-type-inference",
+    "number": 9,
+    "file": "lessons/snippets/testdata/gp-type-inference/09.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/inference.go",
+      "lessons/generic/inference_example_test.go"
+    ]
+  },
+  {
+    "chapter": "gp-type-inference",
+    "number": 10,
+    "file": "lessons/snippets/testdata/gp-type-inference/10.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/generic/inference.go",
+      "lessons/generic/inference_example_test.go"
+    ]
+  },
+  {
     "chapter": "gp-standard-library",
     "number": 1,
     "file": "lessons/snippets/testdata/gp-standard-library/01.go",
     "kind": "excerpt",
     "runnableSources": [
-      "examples/example_test.go"
+      "examples/example_test.go",
+      "examples/stdlib_example_test.go"
     ]
   },
   {
@@ -843,7 +1104,8 @@
     "file": "lessons/snippets/testdata/gp-standard-library/02.go",
     "kind": "excerpt",
     "runnableSources": [
-      "examples/example_test.go"
+      "examples/example_test.go",
+      "examples/stdlib_example_test.go"
     ]
   },
   {

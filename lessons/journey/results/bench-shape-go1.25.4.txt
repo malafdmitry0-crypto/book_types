@@ -1,0 +1,21 @@
+goos: darwin
+goarch: arm64
+pkg: gotypes/lessons/journey
+cpu: Apple M1 Pro
+BenchmarkShape/concrete-10         	18252546	        65.80 ns/op	       0 B/op	       0 allocs/op
+BenchmarkShape/concrete-10         	18389253	        65.91 ns/op	       0 B/op	       0 allocs/op
+BenchmarkShape/concrete-10         	18047486	        66.74 ns/op	       0 B/op	       0 allocs/op
+BenchmarkShape/concrete-10         	17886753	        66.47 ns/op	       0 B/op	       0 allocs/op
+BenchmarkShape/concrete-10         	18091030	        65.62 ns/op	       0 B/op	       0 allocs/op
+BenchmarkShape/generic-10          	 8431394	       142.7 ns/op	       0 B/op	       0 allocs/op
+BenchmarkShape/generic-10          	 8437702	       142.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkShape/generic-10          	 8241070	       143.7 ns/op	       0 B/op	       0 allocs/op
+BenchmarkShape/generic-10          	 8357733	       143.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkShape/generic-10          	 8311122	       143.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkShape/interface-10        	 7217434	       163.7 ns/op	      32 B/op	       1 allocs/op
+BenchmarkShape/interface-10        	 7251141	       165.0 ns/op	      32 B/op	       1 allocs/op
+BenchmarkShape/interface-10        	 7332843	       162.6 ns/op	      32 B/op	       1 allocs/op
+BenchmarkShape/interface-10        	 7384852	       163.1 ns/op	      32 B/op	       1 allocs/op
+BenchmarkShape/interface-10        	 7357059	       163.9 ns/op	      32 B/op	       1 allocs/op
+PASS
+ok  	gotypes/lessons/journey	21.299s

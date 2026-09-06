@@ -15,3 +15,7 @@ func convertDynamic(x any, target reflect.Type) (any, bool) {
 
 // out, ok := convertDynamic(int32(42), reflect.TypeOf(int64(0)))
 // out имеет статический тип any и динамический тип int64.
+
+// Label — определённый тип: reflect.Type отличает его от string,
+// но Kind у обоих одинаковый.
+type Label string

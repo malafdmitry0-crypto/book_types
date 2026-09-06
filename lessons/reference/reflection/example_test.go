@@ -23,3 +23,18 @@ func Example() {
 	// 7
 	// interface
 }
+func Example_kind() {
+	typ := reflect.TypeOf(Label("x"))
+	fmt.Println(typ, typ.Kind(), typ.Name(), typ == reflect.TypeOf(""))
+
+	var label Label
+	direct := reflect.ValueOf(label)
+	viaPointer := reflect.ValueOf(&label).Elem()
+	fmt.Println(direct.CanSet(), viaPointer.CanSet())
+	viaPointer.SetString("changed")
+	fmt.Println(label)
+	// Output:
+	// reflection.Label string Label false
+	// false true
+	// changed
+}

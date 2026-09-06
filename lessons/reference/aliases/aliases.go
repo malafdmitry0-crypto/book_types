@@ -9,3 +9,16 @@ func aliasExample() {
 	order := OrderID(n)
 	_, _ = user, order
 }
+
+// describe различает типы в type switch: алиас UserID совпадает
+// с case int64, а определённый OrderID требует собственной ветки.
+func describe(x any) string {
+	switch x.(type) {
+	case int64: // сюда же попадает UserID
+		return "int64"
+	case OrderID:
+		return "OrderID"
+	default:
+		return "other"
+	}
+}

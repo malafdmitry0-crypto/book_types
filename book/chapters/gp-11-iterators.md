@@ -1,4 +1,4 @@
-# 17. Итераторы: обобщаем уже не тип элемента, а источник
+# 19. Итераторы: обобщаем уже не тип элемента, а источник
 
 Код главы: [iterator.go](../../examples/iterator.go) · [example_test.go](../../examples/example_test.go) · [algorithms_test.go](../../examples/algorithms_test.go).
 

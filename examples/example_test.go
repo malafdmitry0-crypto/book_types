@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"slices"
 	"sort"
+	"strconv"
 )
 
 // Во второй части курса модель проще: callback не возвращают error.
@@ -142,4 +143,92 @@ func Example_iterators() {
 	// Борис true
 	// true
 	// [Анна Борис]
+}
+
+func Example_seq2AndErrors() {
+	for i, user := range slices.All(sampleUsers()) {
+		fmt.Println(i, user.Name)
+	}
+	parse := func(s string) (int, error) { return strconv.Atoi(s) }
+	numbers := MapSeqErr(slices.Values([]string{"1", "x", "3"}), parse)
+	// Потребитель А: остановиться на первой ошибке.
+	for n, err := range numbers {
+		if err != nil {
+			fmt.Println("стоп:", err)
+			break
+		}
+		fmt.Println("число:", n)
+	}
+	// Потребитель Б: пропустить ошибку и продолжить.
+	for n, err := range numbers {
+		if err != nil {
+			continue
+		}
+		fmt.Println("число:", n)
+	}
+	// Output:
+	// 0 Анна
+	// 1 Борис
+	// число: 1
+	// стоп: strconv.Atoi: parsing "x": invalid syntax
+	// число: 1
+	// число: 3
+}
+
+func Example_sourceCleanup() {
+	cleanup := func() { fmt.Println("ресурс освобождён") }
+	for i := range Count(10, cleanup) {
+		if i == 2 {
+			break
+		}
+		fmt.Println("элемент", i)
+	}
+	fmt.Println("цикл завершён")
+	// Output:
+	// элемент 0
+	// элемент 1
+	// ресурс освобождён
+	// цикл завершён
+}
+
+func Example_yieldAfterFalse() {
+	defer func() {
+		fmt.Println("panic:", recover() != nil)
+	}()
+	// Источник нарушает протокол: продолжает после yield == false.
+	broken := func(yield func(int) bool) {
+		yield(1)
+		yield(2)
+	}
+	for v := range broken {
+		fmt.Println("получено", v)
+		break
+	}
+	// Output:
+	// получено 1
+	// panic: true
+}
+
+func Example_interleave() {
+	odd := slices.Values([]int{1, 3, 5})
+	even := slices.Values([]int{2, 4})
+	fmt.Println(slices.Collect(Interleave(odd, even)))
+	left := Count(3, func() { fmt.Println("левый источник закрыт") })
+	right := Count(3, func() { fmt.Println("правый источник закрыт") })
+	for v := range Interleave(left, right) {
+		fmt.Println("элемент", v)
+		if v == 1 {
+			break
+		}
+	}
+	evens := FilterSeq(slices.Values([]int{1, 2, 3, 4}), func(n int) bool { return n%2 == 0 })
+	fmt.Println(slices.Collect(evens))
+	// Output:
+	// [1 2 3 4 5]
+	// элемент 0
+	// элемент 0
+	// элемент 1
+	// правый источник закрыт
+	// левый источник закрыт
+	// [2 4]
 }

@@ -6,6 +6,8 @@
 
 **[Открыть HTML-учебник](index.html)** · **[Оглавление Markdown](book/README.md)** · **[Все примеры и запуск](lessons/README.md)**
 
+**[800 задач на интервью: код — что будет?](interview/index.html)** · [Задачи в Markdown](interview/TASKS.md). 40 тем, полные программы и скрытые ответы с объяснениями; проверены на Go 1.23.0.
+
 [Почему вводили новшества Go](book/chapters/19-motivations.md)
 
 [Типы и их методы](TYPES.md) · [Пакет algorithms: подход раннего Go](algorithms/README.md)

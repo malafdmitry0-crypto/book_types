@@ -1,0 +1,10 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	a := [2]int{1, 2}
+	fmt.Println([3]int(a))
+}

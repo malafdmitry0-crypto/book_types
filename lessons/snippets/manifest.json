@@ -1710,6 +1710,46 @@
     ]
   },
   {
+    "chapter": "reflection",
+    "number": 2,
+    "file": "lessons/snippets/testdata/reflection/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/reflection/reflection.go",
+      "lessons/reference/reflection/example_test.go"
+    ]
+  },
+  {
+    "chapter": "reflection",
+    "number": 3,
+    "file": "lessons/snippets/testdata/reflection/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/reflection/reflection.go",
+      "lessons/reference/reflection/example_test.go"
+    ]
+  },
+  {
+    "chapter": "reflection",
+    "number": 4,
+    "file": "lessons/snippets/testdata/reflection/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/reflection/reflection.go",
+      "lessons/reference/reflection/example_test.go"
+    ]
+  },
+  {
+    "chapter": "reflection",
+    "number": 5,
+    "file": "lessons/snippets/testdata/reflection/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/reflection/reflection.go",
+      "lessons/reference/reflection/example_test.go"
+    ]
+  },
+  {
     "chapter": "aliases",
     "number": 1,
     "file": "lessons/snippets/testdata/aliases/01.go",

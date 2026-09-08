@@ -45,6 +45,13 @@ function markdown(source,id){
   const line=lines[i];
   if(!line.trim()){i++;continue;}
   if(line==='![Таймлайн развития Go](../../book/assets/go-timeline.svg)'){out.push(timelineHTML());i++;continue;}
+  const picture=line.match(/^!\[([^\]]+)\]\((\.\.\/\.\.\/book\/assets\/[a-z0-9-]+\.svg)\)$/);
+  if(picture){
+   const [,alt,url]=picture;
+   const svg=fs.readFileSync(path.resolve(root,'book/chapters',url));
+   out.push(`<figure class="memory-figure"><div class="memory-scroll" tabindex="0" role="region" aria-label="${escape(alt)}"><img src="data:image/svg+xml;base64,${svg.toString('base64')}" alt="${escape(alt)}" width="680"></div><figcaption>${escape(alt)}</figcaption></figure>`);
+   i++;continue;
+  }
   if(line.startsWith('```')){
    const language=line.slice(3).trim() || 'text'; const code=[];i++;while(i<lines.length&&!lines[i].startsWith('```'))code.push(lines[i++]);
    if(i===lines.length)throw new Error('Unclosed code block in '+id);i++;

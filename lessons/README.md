@@ -31,6 +31,8 @@ go test ./lessons/journey ./lessons/laws -v
 
 | Пакет | Что запускать и наблюдать |
 |---|---|
+| [typing](reference/typing/example_test.go) | Статический тип, динамический тип интерфейса, assertions и выбор метода |
+| [cppmemory](reference/cppmemory/example_test.go) | Go глазами C++: копирование, указатели, интерфейсы и nil |
 | [basics](reference/basics/example_test.go) | Числа, константы, строки, парсинг, каналы, массивы, unsafe |
 | [defined](reference/defined/example_test.go) | Новые типы, теги структур, функции и общая память |
 | [typeinterfaces](reference/typeinterfaces/example_test.go) | Assertions, type switch, методы, typed nil |

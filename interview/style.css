@@ -14,3 +14,6 @@ html{scroll-behavior:auto}
 .choice-letter{font-family:var(--mono);color:var(--blue);flex:none}
 .choices code{white-space:pre-wrap;overflow-wrap:anywhere;min-width:0;font:14px/1.6 var(--mono)}
 @media(max-width:640px){.choices{padding:8px}.choices code{font-size:12px}}
+.answer-diagram{max-width:600px;margin:24px 0 8px;break-inside:avoid}
+.answer-diagram img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:white}
+.answer-diagram figcaption{margin-top:12px;color:var(--muted);font-size:14px;line-height:1.65;overflow-wrap:anywhere}

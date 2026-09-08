@@ -1,5 +1,7 @@
 # 3. База: `T(x)` и числовые типы
 
+[Наглядно для программиста C++: память, int, указатели и интерфейсы](20-cpp-memory.md).
+
 Код главы: [example_test.go](../../lessons/reference/basics/example_test.go) · [failures_test.go](../../lessons/failures/failures_test.go).
 
 

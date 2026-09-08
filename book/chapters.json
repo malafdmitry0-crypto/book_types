@@ -306,5 +306,19 @@
     "title": "Зачем вводили новшества: проблемы и решения",
     "part": "Справочник",
     "number": 19
+  },
+  {
+    "id": "cpp-memory",
+    "filename": "20-cpp-memory.md",
+    "title": "Go глазами C++: int, указатели и интерфейсы в памяти",
+    "part": "Справочник",
+    "number": 20
+  },
+  {
+    "id": "static-dynamic",
+    "filename": "21-static-dynamic.md",
+    "title": "Статическая и динамическая типизация",
+    "part": "Справочник",
+    "number": 21
   }
 ]

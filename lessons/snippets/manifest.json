@@ -1855,5 +1855,140 @@
       "lessons/reference/bridges/bridges.go",
       "lessons/reference/bridges/example_test.go"
     ]
+  },
+  {
+    "chapter": "cpp-memory",
+    "number": 1,
+    "file": "lessons/snippets/testdata/cpp-memory/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/cppmemory/example_test.go"
+    ]
+  },
+  {
+    "chapter": "cpp-memory",
+    "number": 2,
+    "file": "lessons/snippets/testdata/cpp-memory/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/cppmemory/example_test.go"
+    ]
+  },
+  {
+    "chapter": "cpp-memory",
+    "number": 3,
+    "file": "lessons/snippets/testdata/cpp-memory/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/cppmemory/example_test.go"
+    ]
+  },
+  {
+    "chapter": "cpp-memory",
+    "number": 4,
+    "file": "lessons/snippets/testdata/cpp-memory/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/cppmemory/example_test.go"
+    ]
+  },
+  {
+    "chapter": "cpp-memory",
+    "number": 5,
+    "file": "lessons/snippets/testdata/cpp-memory/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/cppmemory/example_test.go"
+    ]
+  },
+  {
+    "chapter": "cpp-memory",
+    "number": 6,
+    "file": "lessons/snippets/testdata/cpp-memory/06.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/cppmemory/example_test.go"
+    ]
+  },
+  {
+    "chapter": "cpp-memory",
+    "number": 7,
+    "file": "lessons/snippets/testdata/cpp-memory/07.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/cppmemory/example_test.go"
+    ]
+  },
+  {
+    "chapter": "cpp-memory",
+    "number": 8,
+    "file": "lessons/snippets/testdata/cpp-memory/08.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/cppmemory/example_test.go"
+    ]
+  },
+  {
+    "chapter": "cpp-memory",
+    "number": 9,
+    "file": "lessons/snippets/testdata/cpp-memory/09.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/cppmemory/example_test.go"
+    ]
+  },
+  {
+    "chapter": "static-dynamic",
+    "number": 1,
+    "file": "lessons/snippets/testdata/static-dynamic/01.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/typing/example_test.go"
+    ]
+  },
+  {
+    "chapter": "static-dynamic",
+    "number": 2,
+    "file": "lessons/snippets/testdata/static-dynamic/02.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/typing/example_test.go"
+    ]
+  },
+  {
+    "chapter": "static-dynamic",
+    "number": 3,
+    "file": "lessons/snippets/testdata/static-dynamic/03.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/typing/example_test.go"
+    ]
+  },
+  {
+    "chapter": "static-dynamic",
+    "number": 4,
+    "file": "lessons/snippets/testdata/static-dynamic/04.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/typing/example_test.go"
+    ]
+  },
+  {
+    "chapter": "static-dynamic",
+    "number": 5,
+    "file": "lessons/snippets/testdata/static-dynamic/05.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/typing/example_test.go"
+    ]
+  },
+  {
+    "chapter": "static-dynamic",
+    "number": 6,
+    "file": "lessons/snippets/testdata/static-dynamic/06.go",
+    "kind": "excerpt",
+    "runnableSources": [
+      "lessons/reference/typing/example_test.go"
+    ]
   }
 ]

@@ -1,5 +1,7 @@
 # 7. Интерфейсы: исходная модель полиморфизма
 
+[Наглядно для программиста C++: память, int, указатели и интерфейсы](20-cpp-memory.md).
+
 Код главы: [typeinterfaces.go](../../lessons/reference/typeinterfaces/typeinterfaces.go) · [example_test.go](../../lessons/reference/typeinterfaces/example_test.go).
 
 
@@ -83,6 +85,8 @@ func nilExample() bool {
 ```
 
 Автоматическое взятие адреса при вызове метода у адресуемой переменной не добавляет pointer-методы в method set типа значения. Интерфейс равен `nil`, когда отсутствуют и динамический тип, и значение. Это также объясняет ошибку возврата typed nil как `error`. См. [Go FAQ: nil error](https://go.dev/doc/faq#nil_error) и [method sets](https://go.dev/ref/spec#Method_sets).
+
+[Почему динамический тип интерфейса не делает Go динамически типизированным](21-static-dynamic.md).
 
 ## Самопроверка
 

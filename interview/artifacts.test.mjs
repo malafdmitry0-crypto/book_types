@@ -3,10 +3,30 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {tasks} from './all-tasks.mjs';
+import {answerDiagrams} from './answer-diagrams.mjs';
 
 const read=p=>fs.readFileSync(new URL(p,import.meta.url),'utf8');
 const html=read('index.html');
 const decode=s=>s.replace(/<[^>]*>/g,'').replaceAll('&quot;','"').replaceAll('&gt;','>').replaceAll('&lt;','<').replaceAll('&amp;','&');
+
+test('selected answer diagrams are offline, inside closed answers, and match Markdown assets',()=>{
+ const md=read('TASKS.md');
+ assert.equal(answerDiagrams.size,27);
+ for(const t of tasks){
+  const article=html.slice(html.indexOf(`<article id="task-${t.id}"`)).split('</article>')[0];
+  const diagram=answerDiagrams.get(t.id);
+  assert.equal(article.includes('<figure class="answer-diagram">'),!!diagram,`task ${t.id}`);
+  if(!diagram)continue;
+  assert.ok(t.id<=100);
+  const answer=article.match(/<details class="answer">([\s\S]*?)<\/details>/)[1];
+  const image=answer.match(/<img src="data:image\/svg\+xml;base64,([^"]+)"/);
+  assert.ok(image,`diagram must be inside answer ${t.id}`);
+  assert.equal(Buffer.from(image[1],'base64').toString(),read(diagram.file));
+  assert.equal(read(diagram.file),diagram.svg);
+  assert.ok(md.includes(`![${diagram.caption}](${diagram.file})`));
+  assert.ok(!/<script\b|<foreignObject\b|(?:href|src)="https?:/.test(diagram.svg));
+ }
+});
 
 test('exactly 800 distinct tasks, 20 per topic, with full verification',()=>{
  assert.equal(tasks.length,800);

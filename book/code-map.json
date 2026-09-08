@@ -183,5 +183,11 @@
     "lessons/generic/inference.go",
     "lessons/generic/inference_example_test.go"
   ],
-  "motivations": []
+  "motivations": [],
+  "cpp-memory": [
+    "lessons/reference/cppmemory/example_test.go"
+  ],
+  "static-dynamic": [
+    "lessons/reference/typing/example_test.go"
+  ]
 }
